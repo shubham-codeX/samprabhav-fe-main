@@ -274,7 +274,7 @@ const WhyUs = [
 </section>
 
 {/* ================= Why attend SECTION ================= */}
-<section className="mx-auto px-6 pt-1 py-20">
+<section className="mx-auto px-6 pt-1 py-10">
 
   {/* ENTIRE COLUMN WRAPPER */}
   <div
@@ -348,6 +348,91 @@ const WhyUs = [
   </div>
 </section>
 
+{/* ================= Host Of Samprabhav SECTION================= */}
+<section className="mx-auto px-6 py-16 pt-1">
+      <div
+        className="
+          group
+          relative
+          rounded-3xl
+          p-[2px]
+          bg-gradient-to-b from-[#c7b7f3] via-[#e6dcff] to-[#f6f1ff]
+          transition-all
+          duration-500
+          hover:bg-gradient-to-t
+          hover:from-[#c7b7f3]
+          hover:via-[#e6dcff]
+          hover:to-[#f6f1ff]
+          hover:-translate-y-2
+          hover:shadow-2xl
+        "
+      >
+        {/* INNER CARD */}
+        <div
+          className="
+            rounded-3xl
+            bg-gradient-to-b from-[#faf7ff] to-[#efe8ff]
+            p-10
+            transition-all
+            duration-500
+            group-hover:from-[#efe8ff]
+            group-hover:to-[#faf7ff]
+            border
+            border-transparent
+            group-hover:border-2
+            group-hover:border-[#321951]
+            text-center
+          "
+        >
+          {/* HEADING */}
+          <h3
+            className="
+              text-xl
+              md:text-3xl
+              font-semibold
+              mb-4
+              text-[#633090]
+              transition-all
+              duration-300
+              group-hover:text-[#321951]
+              group-hover:font-bold-italic
+              group-hover:-translate-y-1
+            "
+          >
+            Host of Samprabhav 2026
+          </h3>
+
+          {/* SUB HEADING */}
+          <p className="text-sm md:text-base font-medium text-[#633090] mb-3 hover:text-[#fdc005] transition-colors">
+            Department of Pharmaceutical Management (DOPM), NIPER S.A.S. Nagar
+            (Mohali)
+          </p>
+
+          {/* DESCRIPTION */}
+          <div className="space-y-1 text-lg leading-relaxed text-[#633090] group-hover:text-[#633090] transition-colors duration-300">
+            {[
+              "The Department of Pharmaceutical Management at NIPER S.A.S. Nagar (Mohali) is committed to developing future leaders in pharmaceutical management. With an approach that goes beyond conventional education, the department combines modern technology with forward-thinking management practices to promote innovation and excellence. Its well-structured curriculum balances strong theoretical foundations with hands-on exposure, equipping students to meet the evolving demands of the pharmaceutical industry.",
+            ].map((sentence, idx) => (
+              <p key={idx}>
+                {sentence.split(" ").map((word, i) => (
+                  <span
+                    key={i}
+                    className="
+                      inline-block
+                      transition-colors
+                      duration-200
+                      hover:text-[#f68318]
+                    "
+                  >
+                    {word}&nbsp;
+                  </span>
+                ))}
+              </p>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
   );
 };
