@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Users, Target, Lightbulb, Megaphone, Building2, Award} from "lucide-react";
 
 const AboutPage = () => {
   const sevenS = [
@@ -71,6 +72,65 @@ const WhyUs = [
         "Talent acquisition professionals seeking motivated, innovative, and skilled individuals ready to contribute fresh perspectives to the industry.",
     },
   ];
+
+const pillars = [
+  {
+    title: "Socialize",
+    text:
+      "Build meaningful professional networks and relationships with industry leaders and peers from across the pharmaceutical sector.",
+    icon: Users,
+    color: "#633090",
+    light: "rgba(99,48,144,0.15)",
+  },
+  {
+    title: "Synergize",
+    text:
+      "Collaborate across disciplines to foster integrated thinking and innovative solutions for complex pharmaceutical challenges.",
+    icon: Target,
+    color: "#F68318",
+    light: "rgba(246,131,24,0.18)",
+  },
+  {
+    title: "Specialize",
+    text:
+      "Deepen expertise through interactive sessions with industry experts and gain specialized knowledge in pharmaceutical management.",
+    icon: Lightbulb,
+    color: "#B22E37",
+    light: "rgba(178,46,55,0.18)",
+  },
+];
+
+const stats = [
+  {
+    value: "12+",
+    label: "Speakers",
+    icon: Megaphone,
+    color: "#633090",
+    light: "rgba(99,48,144,0.15)",
+  },
+  {
+    value: "800+",
+    label: "Students",
+    icon: Users,
+    color: "#F68318",
+    light: "rgba(246,131,24,0.18)",
+  },
+  {
+    value: "40+",
+    label: "Colleges",
+    icon: Building2,
+    color: "#FDBE28",
+    light: "rgba(253,190,40,0.2)",
+  },
+  {
+    value: "11+",
+    label: "Sponsors",
+    icon: Award,
+    color: "#B22E37",
+    light: "rgba(178,46,55,0.18)",
+  },
+];
+
   return (
     <main className="min-h-screen bg-white">
       {/* ================= HERO ================= */}
@@ -136,39 +196,11 @@ const WhyUs = [
               </div>
             </div>
 
-            {/* STATS */}
-            <div className="grid grid-cols-3 gap-4">
-              <div className="rounded-2xl p-6 text-center bg-white border hover:shadow-lg transition-shadow 
-              hover:border-[#313575] hover:border-2 hover:bg-gradient-to-t hover:from-[#633090]/20 hover:to-transparent">
-                <div className="text-4xl text-[#313575] mb-2">5</div>
-                <div className="text-xs font-semibold text-[#666]">
-                  THEMATIC AREAS
-                </div>
-              </div>
-              <div className="rounded-2xl p-6 text-center bg-white border hover:shadow-lg transition-shadow 
-              hover:border-[#b22e37] hover:border-2 hover:bg-gradient-to-t hover:from-[#b22e37]/20 hover:to-transparent">
-                <div className="text-4xl font-bold text-[#ff9900] mb-2">
-                  500+
-                </div>
-                <div className="text-xs font-semibold text-[#666]">
-                  PARTICIPANTS
-                </div>
-              </div>
-              <div className="rounded-2xl p-6 text-center bg-white border hover:shadow-lg transition-shadow 
-              hover:border-[#f68318] hover:border-2 hover:bg-gradient-to-t hover:from-[#ff9900]/20 hover:to-transparent">
-                <div className="text-4xl font-bold text-[#ff9900] mb-2">
-                  30+
-                </div>
-                <div className="text-xs font-semibold text-[#666]">
-                  EXPERTS
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* RIGHT IMAGE */}
           <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gray-900 h-96 md:h-auto md:aspect-square">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gray-900 h-100 md:h-auto md:aspect-square">
               {/* //ANCHOR - Placeholder for event image */}
               <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                 <Image
@@ -194,6 +226,224 @@ const WhyUs = [
           </div>
         </div>
       </div>
+
+{/* ================= PILLARS SECTION ================= */}
+<section className="max-w-7xl mx-auto px-6 py-20">
+      {/* Heading */}
+      <div className="text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#321951] hover:text-5xl transition-all duration-300">
+          Our Three Pillars
+        </h2>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        {pillars.map((item, i) => {
+          const Icon = item.icon;
+          return (
+            <div
+              key={i}
+              className="
+                group
+                relative
+                rounded-3xl
+                bg-white
+                p-8
+                transition-all
+                duration-300
+                hover:-translate-y-2
+              "
+              style={{
+                boxShadow: "0 8px 30px rgba(0,0,0,0.06)",
+              }}
+            >
+              {/* Hover Gradient */}
+              <div
+                className="
+                  absolute
+                  inset-0
+                  rounded-3xl
+                  opacity-0
+                  group-hover:opacity-100
+                  transition-opacity
+                  duration-300
+                "
+                style={{
+                  background: `linear-gradient(to top, ${item.light}, transparent)`,
+                }}
+              />
+
+              {/* Border on Hover */}
+              <div
+                className="
+                  absolute
+                  inset-0
+                  rounded-3xl
+                  border-2
+                  opacity-0
+                  group-hover:opacity-100
+                  transition-all
+                  duration-300
+                "
+                style={{ borderColor: item.color }}
+              />
+
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Icon */}
+                <div
+                  className="
+                    w-14
+                    h-14
+                    rounded-xl
+                    flex
+                    items-center
+                    justify-center
+                    mb-6
+                    transition-all
+                    duration-300
+                    group-hover:scale-110
+                  "
+                  style={{
+                    backgroundColor: item.color,
+                    boxShadow: `0 10px 25px ${item.light}`,
+                  }}
+                >
+                  <Icon className="text-white w-7 h-7" />
+                </div>
+
+                {/* Title */}
+                <h3
+                  className="text-xl font-semibold mb-3"
+                  style={{ color: item.color }}
+                >
+                  {item.title}
+                </h3>
+
+                {/* Text */}
+                <p className="text-[#633090] leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+{/* ================= STATS SECTION ================= */}
+<section className="max-w-7xl mx-auto px-6 py-10">
+      {/* Heading */}
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#321951] hover:text-5xl transition-all duration-300">
+          Discover Our Amazing Features
+        </h2>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        {stats.map((item, i) => {
+          const Icon = item.icon;
+          return (
+            <div
+              key={i}
+              className="
+                group
+                relative
+                bg-white
+                rounded-3xl
+                p-8
+                text-center
+                transition-all
+                duration-300
+                hover:-translate-y-3
+              "
+              style={{
+                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+              }}
+            >
+              {/* Hover gradient */}
+              <div
+                className="
+                  absolute
+                  inset-0
+                  rounded-3xl
+                  opacity-0
+                  group-hover:opacity-100
+                  transition-opacity
+                  duration-300
+                "
+                style={{
+                  background: `linear-gradient(to top, ${item.light}, transparent)`,
+                }}
+              />
+
+              {/* Hover border */}
+              <div
+                className="
+                  absolute
+                  inset-0
+                  rounded-3xl
+                  border-2
+                  opacity-0
+                  group-hover:opacity-100
+                  transition-all
+                  duration-300
+                "
+                style={{ borderColor: item.color }}
+              />
+
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Icon */}
+                <div
+                  className="
+                    w-14
+                    h-14
+                    mx-auto
+                    mb-6
+                    rounded-xl
+                    flex
+                    items-center
+                    justify-center
+                    transition-transform
+                    duration-300
+                    group-hover:scale-110
+                  "
+                  style={{
+                    backgroundColor: item.light,
+                  }}
+                >
+                  <Icon
+                    className="w-7 h-7"
+                    style={{ color: item.color }}
+                  />
+                </div>
+
+                {/* Value */}
+                <div
+                  className="text-4xl font-bold mb-2"
+                  style={{ color: item.color }}
+                >
+                  {item.value}
+                </div>
+
+                {/* Label */}
+                <div className="text-[#321951] font-medium mb-4">
+                  {item.label}
+                </div>
+
+                {/* Accent line */}
+                <div
+                  className="h-1 w-14 mx-auto rounded-full"
+                  style={{ backgroundColor: item.color }}
+                />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
 
 {/* ================= 7 S SECTION ================= */}
 <section className="mx-auto px-6 pt-8 py-10">

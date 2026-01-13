@@ -4,9 +4,12 @@ import { useState } from "react";
 type Event = {
   time: string;
   title: string;
-  type: string;
-  description: string;
-  speaker?: string;
+  speaker1?: string;
+  position1?: string;
+  speaker2?: string;
+  position2?: string;
+  speaker3?: string;
+  position3?: string;
   location?: string;
   side: "left" | "right";
 };
@@ -14,68 +17,73 @@ type Event = {
 const scheduleData: Record<string, Event[]> = {
   day1: [
     {
-      time: "08:00 AM",
-      title: "Registration & Welcome Coffee",
-      type: "General",
-      location: "Main Lobby",
-      description:
-        "Collect your badges, meet fellow participants, and grab a coffee to kickstart the festival.",
+      time: "09:30 AM - 11:00 AM",
+      title: "INAUGURAL EVENT",
+      speaker1: "NA",
+      position1: "NA",
+      location: "Central Auditorium",
       side: "left",
     },
     {
-      time: "09:00 AM",
-      title: "Grand Inauguration Ceremony",
-      type: "Keynote",
-      location: "Main Auditorium",
-      description:
-        "Official opening of SAMPRABHAV 2026 with cultural performances and keynote address.",
+      time: "11:30 AM - 01:00 PM",
+      title: "BUCKET 1: Decoding Global Trends Redefining Life Sciences and Technology",
+      speaker1: "NA",
+      position1: "NA",
+      location: "Central Auditorium",
+      side: "right",
+    },
+    {
+      time: "02:00 PM - 03:30 PM",
+      title: "BUCKET 2: Driving patient Impact Through Next-Generation Solutions",
+      speaker1: "Mr. Tejaswi V",
+      position1: "VDGM - Sales, Terumo India",
+      speaker2: "Mr. Rajshekhar Rao",
+      position2: "Business Head, Stryker",
+      location: "Central Auditorium",
+      side: "left",
+    },
+    {
+      time: "3:30 PM - 05:00 PM",
+      title: "BUCKET 3: The Engines Behind Sustainable Enterprise: Where Talent, Ideas, and innovation take shape",
+      speaker1: "Dr. Someshwar Komuravelly",
+      position1 :"Co-Founder and CDO at OrciMed Life Sciences",
+      speaker2: "Mr. Hareshh Ratwani",
+      position2: "Founder, Director & CEO, Healthy Basket Pharmacy",
+      location: "Central Auditorium",
       side: "right",
     },
   ],
 
   day2: [
     {
-      time: "09:00 AM",
-      title: "Yoga & Wellness Session",
-      type: "Workshop",
-      location: "Lawn Area",
-      description:
-        "Start your day with energizing yoga and mindfulness practices.",
-      speaker: "Guru Prakash",
+      time: "09:30 AM - 10:30 AM",
+      title: "BUCKET 4: Reimagining Pharma Marketing for the next decade",
+      location: "Central Auditorium",
+      speaker1: "Megha Choubey",
+      position1: "Manager Business Compliance",
       side: "left",
     },
     {
-      time: "10:00 AM",
-      title: "Debate Championship – Semifinals",
-      type: "Competition",
-      location: "Seminar Hall A",
-      description:
-        "Top teams debate on contemporary social and political issues.",
-      speaker: "Dr. Suresh Patel",
+      time: "11:00 AM - 01:00 PM",
+      title: "BUCKET 5: From Insight to Impact: Shaping the future of Healthcare Strategy",
+      location: "Central Auditorium",
+      speaker1: "Mr. Himanshu Sehgal",
+      position1: "Director-Project Delivery, Octavus Consulting",
+      speaker2: "Mr. Abhisek Hiteshi Arora",
+      position2: "Project Leader, BCG",
       side: "right",
     },
     {
-      time: "11:00 AM",
-      title: "Traditional Folk Music Concert",
-      type: "Cultural",
-      description: "Celebration of India’s rich folk music heritage.",
+      time: "2:00 PM - 3:30 PM",
+      title: "INCEPTION CEREMONY",
+      location: "Central Auditorium",
       side: "left",
     },
     {
-      time: "12:00 PM",
-      title: "Film Making Workshop",
-      type: "Workshop",
-      speaker: "Karan Jogalekar",
-      description:
-        "Learn script writing, cinematography, and editing techniques.",
+      time: "03:30 PM - 05:00 PM",
+      title: "Felicitation of Sponsors & Closing Ceremony",
+      location: "Central Auditorium",
       side: "right",
-    },
-    {
-      time: "01:00 PM",
-      title: "Lunch Break",
-      type: "Break",
-      description: "Recharge and network over lunch.",
-      side: "left",
     },
   ],
 };
@@ -132,8 +140,8 @@ export default function SchedulePage() {
           <div className="h-12 rounded-full bg-gradient-to-r from-[#3A2B73] to-[#5A3E9C]" />
           <div className="absolute inset-0 flex items-center justify-between px-2">
             {[
-              { key: "day1", label: "DAY 1", date: "March 15" },
-              { key: "day2", label: "DAY 2", date: "March 16" },
+              { key: "day1", label: "DAY 1", date: "7th February" },
+              { key: "day2", label: "DAY 2", date: "8th February" },
             ].map((day) => (
               <button
                 key={day.key}
@@ -171,40 +179,157 @@ export default function SchedulePage() {
                 <div className="absolute left-1/2 top-6 w-4 h-4 rounded-full bg-white border-4 border-purple-600 -translate-x-1/2 z-10" />
 
                 {/* Card */}
-                <div className="bg-white w-full max-w-md rounded-2xl shadow-xl p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-purple-100 text-purple-700">
-                      {event.time}
-                    </span>
-                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-orange-100 text-orange-700">
-                      {event.type}
-                    </span>
-                  </div>
+<div
+  className="
+    bg-white w-full max-w-md
+    rounded-2xl
+    border border-transparent
+    shadow-md
+    p-6
+    transition-all duration-300 ease-out
+    hover:-translate-y-2
+    hover:shadow-2xl
+    hover:border-[#633090]
+  "
+>
+  {/* Time pill */}
+  <div className="flex items-center gap-2 mb-4">
+    <span
+      className="
+        text-xs font-semibold
+        px-4 py-1.5
+        rounded-full
+        bg-[#F4EEFB]
+        text-[#633090]
+      "
+    >
+      {event.time}
+    </span>
+  </div>
 
-                  <h3 className="text-lg font-semibold text-slate-900">
-                    {event.title}
-                  </h3>
+  {/* Title */}
+  <h3 className="text-xl font-semibold text-[#321951] leading-snug">
+    {event.title}
+  </h3>
 
-                  {event.location && (
-                    <p className="mt-1 text-sm text-orange-600">
-                      📍 {event.location}
-                    </p>
-                  )}
+  {/* Location */}
+  {event.location && (
+    <p className="mt-2 text-sm text-[#F68318] flex items-center gap-1">
+      <span>📍</span>
+      {event.location}
+    </p>
+  )}
 
-                  <p className="mt-2 text-sm text-slate-600">
-                    {event.description}
-                  </p>
+  {/* Divider1 */}
+{event.speaker1 && <div className="my-5 h-px bg-slate-200" />}
 
-                  {event.speaker && (
-                    <p className="mt-3 text-sm text-slate-700 font-medium">
-                      Speaker: {event.speaker}
-                    </p>
-                  )}
+{/* Speaker1 block */}
+{event.speaker1 && (
+  <div className="flex items-start gap-3">
+    {/* Speaker Icon */}
+    <div
+      className="
+        flex items-center justify-center
+        w-12 h-12
+        // rounded-full
+        bg-[#F4EEFB]
+        text-[#633090]
+        text-md
+        font-semibold
+      "
+    >
+      👤
+    </div>
 
-                  <button className="mt-4 text-sm font-semibold text-orange-600 hover:underline">
-                    View Details →
-                  </button>
-                </div>
+    <div>
+      {/* Label */}
+      <p className="text-xs font-semibold uppercase tracking-wider text-[#633090]">
+        Speaker
+      </p>
+
+      {/* Name */}
+      <p className="text-sm font-semibold text-[#321951]">
+        {event.speaker1}
+        <p className="text-xs text-slate-500"> {event.position1}</p>
+      </p>
+
+    </div>
+  </div>
+)}
+  {/* Divider2 */}
+{event.speaker2 && <div className="my-5 h-px bg-slate-200" />}
+
+{/* Speaker2 block */}
+{event.speaker2 && (
+  <div className="flex items-start gap-3">
+    {/* Speaker Icon */}
+    <div
+      className="
+        flex items-center justify-center
+        w-12 h-12
+        // rounded-full
+        bg-[#F4EEFB]
+        text-[#633090]
+        text-md
+        font-semibold
+      "
+    >
+      👤
+    </div>
+
+    <div>
+      {/* Label */}
+      <p className="text-xs font-semibold uppercase tracking-wider text-[#633090]">
+        Speaker
+      </p>
+
+      {/* Name */}
+      <p className="text-sm font-semibold text-[#321951]">
+        {event.speaker2}
+        <p className="text-xs text-slate-500"> {event.position2}</p>
+      </p>
+
+    </div>
+  </div>
+)}
+  {/* Divider3 */}
+{event.speaker3 && <div className="my-5 h-px bg-slate-200" />}
+
+{/* Speaker3 block */}
+{event.speaker3 && (
+  <div className="flex items-start gap-3">
+    {/* Speaker Icon */}
+    <div
+      className="
+        flex items-center justify-center
+        w-12 h-12
+        // rounded-full
+        bg-[#F4EEFB]
+        text-[#633090]
+        text-md
+        font-semibold
+      "
+    >
+      👤
+    </div>
+
+    <div>
+      {/* Label */}
+      <p className="text-xs font-semibold uppercase tracking-wider text-[#633090]">
+        Speaker
+      </p>
+
+      {/* Name */}
+      <p className="text-sm font-semibold text-[#321951]">
+        {event.speaker3}
+        <p className="text-xs text-slate-500"> {event.position3}</p>
+      </p>
+
+    </div>
+  </div>
+)}
+
+</div>
               </div>
             ))}
           </div>

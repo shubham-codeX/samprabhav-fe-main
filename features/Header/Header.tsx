@@ -161,26 +161,6 @@ export function Header() {
             >
               FAQs
             </Link>
-            <Link
-              href="/contact-us"
-              className="
-    text-white text-sm
-    relative
-    transition-all duration-300 ease-out
-    transform
-    hover:text-[#FDC005]
-    hover:-translate-y-0.5
-    hover:scale-105
-
-    after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5
-    after:bg-[#FDC005]
-    after:transform after:scale-x-0
-    after:transition-transform after:duration-300
-    hover:after:scale-x-100
-  "
-            >
-              Contact Us
-            </Link>
           </nav>
 
           {/* Register Button */}
