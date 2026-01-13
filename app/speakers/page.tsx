@@ -52,17 +52,17 @@ const Speakers = () => {
           </p>
         </div>
 
-        {/* Keynote Speakers Section */}
+        {/* =============== BUCKET 2 ===================== */}
         <div className="mb-16">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-[#313575] rounded-lg text-white">
+          <div className="flex items-center gap-4 mb-5">
+            <div className="flex items-center justify-center w-12 h-12 bg-[#321951] rounded-lg text-white">
               <Mic size={24} />
             </div>
             <h2 className="text-3xl font-bold text-[#313575]">
-              Keynote Speakers
+              Driving Patient Impact Through Next-Generation Solutions
             </h2>
-            <div className="flex-1 h-1 bg-gradient-to-r from-[#313575] to-transparent rounded-full"></div>
           </div>
+            {/* <div className="flex-1 h-1 mb-5 bg-gradient-to-r from-[#313575] to-transparent rounded-full"></div> */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {speakers.keynote.map((speaker) => (
@@ -75,17 +75,17 @@ const Speakers = () => {
           </div>
         </div>
 
-        {/* Workshop Leaders Section */}
+        {/*  =============== BUCKET 1 =====================  */}
         <div className="mb-16">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-[#633190] rounded-lg text-white">
+          <div className="flex items-center gap-4 mb-5">
+            <div className="flex items-center justify-center w-12 h-12 bg-[#633090] rounded-lg text-white">
               <Building2 size={24} />
             </div>
             <h2 className="text-3xl font-bold text-blue-900">
-              Workshop Leaders
+              Decoding Global Trends Redefining Life Sciences and Technology
             </h2>
-            <div className="flex-1 h-1 bg-gradient-to-r from-[#633190] to-transparent rounded-full"></div>
           </div>
+          {/* <div className="flex-1 h-1 mb-5 bg-gradient-to-r from-[#633190] to-transparent rounded-full"></div> */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {speakers.workshop.map((speaker) => (
@@ -98,16 +98,16 @@ const Speakers = () => {
           </div>
         </div>
 
-        {/* Judges & Mentors Section */}
+        {/* =============== BUCKET 3 ===================== */}
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-lg text-white">
+            <div className="flex items-center justify-center w-12 h-12 bg-[#313575] rounded-lg text-white">
               <Award size={24} />
             </div>
             <h2 className="text-3xl font-bold text-blue-900">
-              Judges & Mentors
+              The Engines Behind Sustainable Enterprise: Where Talent, Ideas, and innovation take shape
             </h2>
-            <div className="flex-1 h-1 bg-gradient-to-r from-blue-600 to-transparent rounded-full"></div>
+            {/* <div className="flex-1 h-1 bg-gradient-to-r from-blue-600 to-transparent rounded-full"></div> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -121,16 +121,15 @@ const Speakers = () => {
           </div>
         </div>
 
-        {/* Special Performers Section */}
+        {/* =============== BUCKET 4 =====================  */}
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-red-600 rounded-lg text-white">
+            <div className="flex items-center justify-center w-12 h-12 bg-[#b22e37] rounded-lg text-white">
               <Star size={24} />
             </div>
             <h2 className="text-3xl font-bold text-blue-900">
-              Special Performers
+              Reimagining Pharma Marketing for the next decade
             </h2>
-            <div className="flex-1 h-1 bg-gradient-to-r from-red-600 to-transparent rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -144,16 +143,16 @@ const Speakers = () => {
           </div>
         </div>
 
-        {/* Industry Experts Section */}
+        {/*  =============== BUCKET 5 =====================   */}
         <div>
           <div className="flex items-center gap-4 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-green-600 rounded-lg text-white">
+            <div className="flex items-center justify-center w-12 h-12 bg-[#f68318] rounded-lg text-white">
               <Briefcase size={24} />
             </div>
             <h2 className="text-3xl font-bold text-blue-900">
-              Industry Experts
+              BUCKET 5: From Insight to Impact: Shaping the future of Healthcare Strategy
             </h2>
-            <div className="flex-1 h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full"></div>
+            {/* <div className="flex-1 h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full"></div> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

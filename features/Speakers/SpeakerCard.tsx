@@ -2,6 +2,7 @@ import React from "react";
 import { Mic, Building2, Award, Star, Briefcase } from "lucide-react";
 import Image from "next/image";
 import { Speaker } from "./speakersData";
+import Link from "next/link";
 
 interface SpeakerCardProps {
   speaker: Speaker;
@@ -20,23 +21,23 @@ export function SpeakerCard({ speaker, category }: SpeakerCardProps) {
       icon = <Mic size={20} />;
       break;
     case "workshop":
-      accentColor = "bg-[#633190]";
-      borderColor = "border-l-[#633190]";
+      accentColor = "bg-[#633090]";
+      borderColor = "border-l-[#633090]";
       icon = <Building2 size={20} />;
       break;
     case "judgesMentors":
-      accentColor = "bg-blue-600";
-      borderColor = "border-l-blue-600";
+      accentColor = "bg-[#313575]";
+      borderColor = "border-l-[#313575]";
       icon = <Award size={20} />;
       break;
     case "specialPerformers":
-      accentColor = "bg-red-600";
-      borderColor = "border-l-red-600";
+      accentColor = "bg-[#b22e37]";
+      borderColor = "border-l-[#b22e37]";
       icon = <Star size={20} />;
       break;
     case "industryExperts":
-      accentColor = "bg-green-600";
-      borderColor = "border-l-green-600";
+      accentColor = "bg-[#f68318]";
+      borderColor = "border-l-[#f68318]";
       icon = <Briefcase size={20} />;
       break;
     default:
@@ -65,11 +66,30 @@ export function SpeakerCard({ speaker, category }: SpeakerCardProps) {
       </div>
 
       <div className="flex-1 flex flex-col justify-center">
-        <h3 className="text-lg font-semibold text-blue-900">{speaker.name}</h3>
+        <h3 className="text-lg font-semibold">
+  {speaker.link ? (
+    <Link
+      href={speaker.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        text-blue-900
+        hover:text-[#633190]
+        hover:underline
+        transition-colors
+      "
+    >
+      {speaker.name}
+    </Link>
+  ) : (
+    <span className="text-blue-900">{speaker.name}</span>
+  )}
+</h3>
+
         <p className="text-sm font-medium text-[#633190] mb-1">
           {speaker.role}
         </p>
-        <p className="text-sm text-gray-600">{speaker.topic}</p>
+        {/* <p className="text-sm text-gray-600">{speaker.topic}</p> */}
       </div>
     </div>
   );
