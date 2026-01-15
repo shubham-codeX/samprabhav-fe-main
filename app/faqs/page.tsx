@@ -35,7 +35,7 @@ export default function FAQPage() {
       <FAQHeader />
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
 
         <CategoryTabs

@@ -39,32 +39,32 @@ const Speakers = () => {
 
 ];
   return (
-    <main className="min-h-screen bg-[#fdfcfd] py-16 px-6">
+    <main className="min-h-screen bg-[#fdfcfd] py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-10 py-10">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+        <div className="text-center mb-8 sm:mb-10 py-6 sm:py-8 md:py-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-3 sm:mb-4">
             Industry Leaders & Experts
           </h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed px-2">
             Learn from renowned pharmaceutical industry experts, mentors, and
             professionals who will guide you through SAMPRABHAV 2026
           </p>
         </div>
 
         {/* =============== BUCKET 2 ===================== */}
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-5">
-            <div className="flex items-center justify-center w-12 h-12 bg-[#321951] rounded-lg text-white">
-              <Mic size={24} />
+        <div className="mb-12 sm:mb-16">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
+            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#321951] rounded-lg text-white flex-shrink-0">
+              <Mic size={20} className="sm:w-6 sm:h-6" />
             </div>
-            <h2 className="text-3xl font-bold text-[#313575]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#313575]">
               Driving Patient Impact Through Next-Generation Solutions
             </h2>
           </div>
             {/* <div className="flex-1 h-1 mb-5 bg-gradient-to-r from-[#313575] to-transparent rounded-full"></div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
             {speakers.keynote.map((speaker) => (
               <SpeakerCard
                 key={speaker.id}
@@ -76,18 +76,18 @@ const Speakers = () => {
         </div>
 
         {/*  =============== BUCKET 1 =====================  */}
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-5">
-            <div className="flex items-center justify-center w-12 h-12 bg-[#633090] rounded-lg text-white">
-              <Building2 size={24} />
+        <div className="mb-12 sm:mb-16">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
+            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#633090] rounded-lg text-white flex-shrink-0">
+              <Building2 size={20} className="sm:w-6 sm:h-6" />
             </div>
-            <h2 className="text-3xl font-bold text-blue-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
               Decoding Global Trends Redefining Life Sciences and Technology
             </h2>
           </div>
           {/* <div className="flex-1 h-1 mb-5 bg-gradient-to-r from-[#633190] to-transparent rounded-full"></div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {speakers.workshop.map((speaker) => (
               <SpeakerCard
                 key={speaker.id}
@@ -99,18 +99,18 @@ const Speakers = () => {
         </div>
 
         {/* =============== BUCKET 3 ===================== */}
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-[#313575] rounded-lg text-white">
-              <Award size={24} />
+        <div className="mb-12 sm:mb-16">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#313575] rounded-lg text-white flex-shrink-0">
+              <Award size={20} className="sm:w-6 sm:h-6" />
             </div>
-            <h2 className="text-3xl font-bold text-blue-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
               The Engines Behind Sustainable Enterprise: Where Talent, Ideas, and innovation take shape
             </h2>
             {/* <div className="flex-1 h-1 bg-gradient-to-r from-blue-600 to-transparent rounded-full"></div> */}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
             {speakers.judgesMentors.map((speaker) => (
               <SpeakerCard
                 key={speaker.id}
@@ -122,17 +122,17 @@ const Speakers = () => {
         </div>
 
         {/* =============== BUCKET 4 =====================  */}
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-[#b22e37] rounded-lg text-white">
-              <Star size={24} />
+        <div className="mb-12 sm:mb-16">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#b22e37] rounded-lg text-white flex-shrink-0">
+              <Star size={20} className="sm:w-6 sm:h-6" />
             </div>
-            <h2 className="text-3xl font-bold text-blue-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
               Reimagining Pharma Marketing for the next decade
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
             {speakers.specialPerformers.map((speaker) => (
               <SpeakerCard
                 key={speaker.id}
@@ -145,17 +145,17 @@ const Speakers = () => {
 
         {/*  =============== BUCKET 5 =====================   */}
         <div>
-          <div className="flex items-center gap-4 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 bg-[#f68318] rounded-lg text-white">
-              <Briefcase size={24} />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#f68318] rounded-lg text-white flex-shrink-0">
+              <Briefcase size={20} className="sm:w-6 sm:h-6" />
             </div>
-            <h2 className="text-3xl font-bold text-blue-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
               BUCKET 5: From Insight to Impact: Shaping the future of Healthcare Strategy
             </h2>
             {/* <div className="flex-1 h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full"></div> */}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {speakers.industryExperts.map((speaker) => (
               <SpeakerCard
                 key={speaker.id}
@@ -167,19 +167,19 @@ const Speakers = () => {
         </div>
       </div>
 {/* ================================ Testimonials Section ====================================== */}
-      <section className="max-w-7xl mx-auto px-6 py-15 mt-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-15 mt-12 sm:mt-16 md:mt-20">
       {/* Header */}
-      <div className="text-center mb-8">
-        <span className="inline-block px-5 py-1.5 rounded-full text-sm tracking-wide text-white bg-gradient-to-r from-[#B22E37] to-[#F68318] mb-6
+      <div className="text-center mb-6 sm:mb-8">
+        <span className="inline-block px-4 sm:px-5 py-1.5 rounded-full text-xs sm:text-sm tracking-wide text-white bg-gradient-to-r from-[#B22E37] to-[#F68318] mb-4 sm:mb-6
         hover:bg-gradient-to-r hover:from-[#F68318] hover:to-[#B22E37] transition-all duration-300">
           TESTIMONIALS
         </span>
 
-        <h2 className="text-4xl md:text-5xl font-semibold text-[#321951] mb-6 hover:text-6xl duration-300">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#321951] mb-4 sm:mb-6 hover:text-3xl sm:hover:text-4xl md:hover:text-5xl lg:hover:text-6xl duration-300 px-2">
           What Our Speakers Say
         </h2>
 
-        <p className="max-w-2xl mx-auto italic text-[#633090] text-md pb-2">
+        <p className="max-w-2xl mx-auto italic text-[#633090] text-sm sm:text-base md:text-md pb-2 px-4">
           “Testimonials are the true reflection of a satisfied heart, echoing
           the authenticity of a positive experience”
         </p>
@@ -190,15 +190,15 @@ const Speakers = () => {
         <div
           key={i}
           className="
-            mb-7
+            mb-5 sm:mb-7
             group
             relative
-            rounded-3xl
+            rounded-2xl sm:rounded-3xl
             overflow-hidden
             transition-all
             duration-300
             hover:-translate-y-2
-            shadow-xl
+            shadow-lg sm:shadow-xl
           "
           style={{ boxShadow: `0 20px 40px ${item.light}` }}
         >

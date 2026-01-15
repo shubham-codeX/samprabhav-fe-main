@@ -14,21 +14,21 @@ export default function Glimpses() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
 
   return (
-    <main className="min-h-screen bg-linear-to-b from-purple-50 to-blue-50 py-20 px-6">
+    <main className="min-h-screen bg-linear-to-b from-purple-50 to-blue-50 py-16 sm:py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-3 sm:mb-4 px-2">
             Glimpses of SAMPRABHAV
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto px-2">
             Relive the memorable moments and vibrant performances
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">{/* Rest of the image grid */}
           {imageFiles.map((file, index) => {
             const src = `/glimses/${file}`;
 
@@ -69,20 +69,20 @@ export default function Glimpses() {
 
       {/* Fullscreen Preview */}
       {activeImage && (
-        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
           <button
             onClick={() => setActiveImage(null)}
-            className="absolute top-6 right-6 text-white text-4xl font-bold hover:scale-110"
+            className="absolute top-4 sm:top-6 right-4 sm:right-6 text-white text-3xl sm:text-4xl font-bold hover:scale-110 z-10"
           >
             ✕
           </button>
 
-          <div className="relative w-[90vw] h-[85vh]">
+          <div className="relative w-full h-full max-w-6xl max-h-[90vh]">
             <Image
               src={activeImage}
               alt="Preview"
               fill
-              className="object-contain rounded-xl"
+              className="object-contain rounded-lg sm:rounded-xl"
             />
           </div>
         </div>

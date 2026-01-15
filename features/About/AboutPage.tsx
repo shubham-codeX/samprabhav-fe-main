@@ -134,23 +134,22 @@ const stats = [
   return (
     <main className="min-h-screen bg-white">
       {/* ================= HERO ================= */}
-      <div className="text-center pt-26 pb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+      <div className="text-center pt-20 sm:pt-24 md:pt-26 pb-8 sm:pb-10 md:pb-12 px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-3 sm:mb-4">
           Welcome to Samprabhav 2026
         </h1>
       </div>
 
       {/* ================= ABOUT SECTION ================= */}
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-start">
           {/* LEFT COLUMN */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {/* TEXT BOX */}
             <div
               className="
                 group
-                p-8
+                p-6 sm:p-8
                 rounded-3xl
                 border border-[#e5e0f0]
                 bg-white
@@ -161,11 +160,11 @@ const stats = [
                 hover:shadow-2xl
               "
             >
-              <p className="text-lg italic text-[#683bb7] mb-4">
+              <p className="text-base sm:text-lg italic text-[#683bb7] mb-3 sm:mb-4">
                 Socialize • Synergize • Specialize
               </p>
 
-              <div className="space-y-4 text-[#666] leading-relaxed text-lg">
+              <div className="space-y-3 sm:space-y-4 text-[#666] leading-relaxed text-sm sm:text-base lg:text-lg">
                 <p>
                   <span className="transition-all duration-300 group-hover:text-[#f68318] group-hover:font-bold">
                     Samprabhav – Union of Magnates
@@ -200,8 +199,8 @@ const stats = [
 
           {/* RIGHT IMAGE */}
           <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gray-900 h-100 md:h-auto md:aspect-square">
-              {/* //ANCHOR - Placeholder for event image */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gray-900 h-64 sm:h-80 md:h-96 lg:h-auto lg:aspect-square">
+              {/* Placeholder for event image */}
               <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                 <Image
                   src="/random.png"
@@ -210,14 +209,14 @@ const stats = [
                   className="object-cover"
                 />
               </div>
-              {/* //ANCHOR - Caption Box */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-3xl">
-                <div className="text-white border border-white p-4 rounded-lg bg-gradient-to-t from-[#633090]/80 to-transparent 
+              {/* Caption Box */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 sm:p-6 rounded-b-3xl">
+                <div className="text-white border border-white p-3 sm:p-4 rounded-lg bg-gradient-to-t from-[#633090]/80 to-transparent 
                 hover:bg-white/10 hover:text-[#f68318] transition-colors hover:shadow-lg hover:gradient-to-t hover:from-transparent hover:to-[#633090]/80">
-                  <p className="text-lg font-semibold mb-1 text-center">
+                  <p className="text-sm sm:text-base lg:text-lg font-semibold mb-1 text-center">
                     Department of Pharmaceutical Management
                   </p>
-                  <p className="text-sm opacity-90 text-center">
+                  <p className="text-xs sm:text-sm opacity-90 text-center">
                     NIPER S.A.S. Nagar (Mohali)
                   </p>
                 </div>
@@ -228,16 +227,16 @@ const stats = [
       </div>
 
 {/* ================= PILLARS SECTION ================= */}
-<section className="max-w-7xl mx-auto px-6 py-20">
+<section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
       {/* Heading */}
-      <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#321951] hover:text-5xl transition-all duration-300">
+      <div className="text-center mb-8 sm:mb-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#321951] hover:text-3xl sm:hover:text-4xl md:hover:text-5xl transition-all duration-300">
           Our Three Pillars
         </h2>
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
         {pillars.map((item, i) => {
           const Icon = item.icon;
           return (
@@ -332,16 +331,16 @@ const stats = [
     </section>
 
 {/* ================= STATS SECTION ================= */}
-<section className="max-w-7xl mx-auto px-6 py-10">
+<section className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
       {/* Heading */}
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#321951] hover:text-5xl transition-all duration-300">
+      <div className="text-center mb-12 sm:mb-14 md:mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#321951] hover:text-3xl sm:hover:text-4xl md:hover:text-5xl transition-all duration-300">
           Discover Our Amazing Features
         </h2>
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
         {stats.map((item, i) => {
           const Icon = item.icon;
           return (
@@ -446,7 +445,7 @@ const stats = [
     </section>
 
 {/* ================= 7 S SECTION ================= */}
-<section className="mx-auto px-6 pt-8 py-10">
+<section className="mx-auto px-4 sm:px-6 pt-6 sm:pt-8 py-8 sm:py-10">
 
   {/* ENTIRE COLUMN WRAPPER */}
   <div
@@ -454,19 +453,19 @@ const stats = [
       group
       rounded-3xl
       bg-[#633090]/20
-      p-6 md:p-8
-      space-y-4
+      p-4 sm:p-6 md:p-8
+      space-y-3 sm:space-y-4
       transition-all
       duration-300
       hover:-translate-y-2
       hover:shadow-2xl
     "
   >
-    <div className="text-center mb-10">
-    <h2 className="text-2xl md:text-3xl font-semibold text-[#b22e37] hover:text-4xl transition-all duration-300">
+    <div className="text-center mb-6 sm:mb-8 md:mb-10">
+    <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#b22e37] hover:text-2xl sm:hover:text-3xl md:hover:text-4xl transition-all duration-300">
       WHY SHOULD YOU ATTEND?
     </h2>
-    <p className="mt-2 text-lg font-medium text-[#F68318]">
+    <p className="mt-2 text-base sm:text-lg font-medium text-[#F68318]">
       7s of Samprabhav
     </p>
   </div>
@@ -477,8 +476,8 @@ const stats = [
           group/item
           relative
           flex
-          gap-4
-          p-5
+          gap-3 sm:gap-4
+          p-4 sm:p-5
           rounded-xl
           bg-white/70
           transition-all
@@ -507,12 +506,12 @@ const stats = [
         />
 
         {/* Icon */}
-        <div className="w-6 h-6 rounded-full bg-[#633090] text-white flex items-center justify-center text-sm font-bold">
+        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#633090] text-white flex items-center justify-center text-xs sm:text-sm font-bold flex-shrink-0 mt-0.5">
           ✓
         </div>
 
         {/* Text */}
-        <p className="text-[#2b0e93] leading-relaxed">
+        <p className="text-[#2b0e93] leading-relaxed text-sm sm:text-base">
           <span className="font-bold text-[#321951]">
             {item.title}:
           </span>{" "}
@@ -524,7 +523,7 @@ const stats = [
 </section>
 
 {/* ================= Why attend SECTION ================= */}
-<section className="mx-auto px-6 pt-1 py-10">
+<section className="mx-auto px-4 sm:px-6 pt-1 py-8 sm:py-10">
 
   {/* ENTIRE COLUMN WRAPPER */}
   <div
@@ -532,16 +531,16 @@ const stats = [
       group
       rounded-3xl
       bg-[#633090]/20 to-[#f68318]/10
-      p-6 md:p-8
-      space-y-4
+      p-4 sm:p-6 md:p-8
+      space-y-3 sm:space-y-4
       transition-all
       duration-300
       hover:-translate-y-2
       hover:shadow-2xl
     "
   >
-    <div className="text-center mb-10">
-    <h2 className="text-2xl md:text-3xl font-semibold text-[#b22e37] hover:text-4xl transition-all duration-300">
+    <div className="text-center mb-6 sm:mb-8 md:mb-10">
+    <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#b22e37] hover:text-2xl sm:hover:text-3xl md:hover:text-4xl transition-all duration-300">
       Who Should Attend Samprabhav?
     </h2>
   </div>
@@ -552,8 +551,8 @@ const stats = [
           group/item
           relative
           flex
-          gap-4
-          p-5
+          gap-3 sm:gap-4
+          p-4 sm:p-5
           rounded-xl
           bg-white/70
           transition-all
@@ -582,12 +581,12 @@ const stats = [
         />
 
         {/* Icon */}
-        <div className="w-6 h-6 rounded-full bg-[#633090] text-white flex items-center justify-center text-sm font-bold">
+        <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#633090] text-white flex items-center justify-center text-xs sm:text-sm font-bold flex-shrink-0 mt-0.5">
           ✓
         </div>
 
         {/* Text */}
-        <p className="text-[#2b0e93] leading-relaxed">
+        <p className="text-[#2b0e93] leading-relaxed text-sm sm:text-base">
           <span className="font-bold text-[#321951]">
             {item.title}:
           </span>{" "}
@@ -599,7 +598,7 @@ const stats = [
 </section>
 
 {/* ================= Host Of Samprabhav SECTION================= */}
-<section className="mx-auto px-6 py-16 pt-1">
+<section className="mx-auto px-4 sm:px-6 py-12 sm:py-14 md:py-16 pt-1">
       <div
         className="
           group
@@ -622,7 +621,7 @@ const stats = [
           className="
             rounded-3xl
             bg-gradient-to-b from-[#faf7ff] to-[#efe8ff]
-            p-10
+            p-6 sm:p-8 md:p-10
             transition-all
             duration-500
             group-hover:from-[#efe8ff]
@@ -637,10 +636,9 @@ const stats = [
           {/* HEADING */}
           <h3
             className="
-              text-xl
-              md:text-3xl
+              text-lg sm:text-xl md:text-2xl lg:text-3xl
               font-semibold
-              mb-4
+              mb-3 sm:mb-4
               text-[#633090]
               transition-all
               duration-300
@@ -653,13 +651,13 @@ const stats = [
           </h3>
 
           {/* SUB HEADING */}
-          <p className="text-sm md:text-base font-medium text-[#633090] mb-3 hover:text-[#fdc005] transition-colors">
+          <p className="text-xs sm:text-sm md:text-base font-medium text-[#633090] mb-3 hover:text-[#fdc005] transition-colors">
             Department of Pharmaceutical Management (DOPM), NIPER S.A.S. Nagar
             (Mohali)
           </p>
 
           {/* DESCRIPTION */}
-          <div className="space-y-1 text-lg leading-relaxed text-[#633090] group-hover:text-[#633090] transition-colors duration-300">
+          <div className="space-y-1 text-sm sm:text-base md:text-lg leading-relaxed text-[#633090] group-hover:text-[#633090] transition-colors duration-300">
             {[
               "The Department of Pharmaceutical Management at NIPER S.A.S. Nagar (Mohali) is committed to developing future leaders in pharmaceutical management. With an approach that goes beyond conventional education, the department combines modern technology with forward-thinking management practices to promote innovation and excellence. Its well-structured curriculum balances strong theoretical foundations with hands-on exposure, equipping students to meet the evolving demands of the pharmaceutical industry.",
             ].map((sentence, idx) => (

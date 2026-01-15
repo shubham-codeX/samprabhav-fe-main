@@ -19,20 +19,20 @@ const TimerBox = ({
   isOrange: boolean;
 }) => (
   <div
-    className={`flex flex-col items-center justify-center p-6 rounded-2xl border ${
+    className={`flex flex-col items-center justify-center p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl border ${
       isOrange
         ? "border-orange-500/50 bg-white/5 backdrop-blur-md"
         : "border-white/20 bg-white/5 backdrop-blur-md"
     }`}
   >
     <div
-      className={`text-4xl md:text-5xl font-bold mb-2 ${
+      className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2 ${
         isOrange ? "text-orange-500" : "text-red-500"
       }`}
     >
       {value}
     </div>
-    <div className="text-white/70 text-xs md:text-sm uppercase tracking-widest">
+    <div className="text-white/70 text-[10px] sm:text-xs md:text-sm uppercase tracking-widest">
       {label}
     </div>
   </div>
@@ -69,7 +69,7 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 w-full max-w-xs sm:max-w-md md:max-w-2xl px-4 sm:px-0">
       <TimerBox
         value={String(timeLeft.days).padStart(2, "0")}
         label="Days"

@@ -92,14 +92,14 @@ export default function SchedulePage() {
   const [activeDay, setActiveDay] = useState<"day1" | "day2" | "day3">("day2");
 
   return (
-    <section className="bg-[#FAFAFF] pt-24">
-      <div className="max-w-6xl mx-auto px-4 pb-20">
+    <section className="bg-[#FAFAFF] pt-20 sm:pt-24">
+      <div className="max-w-6xl mx-auto px-4 pb-16 sm:pb-20">
         {/* Heading */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16 sm:mb-20">
   {/* EVENT TIMELINE pill */}
-  <div className="inline-flex items-center justify-center mb-6">
+  <div className="inline-flex items-center justify-center mb-4 sm:mb-6">
     <span className="
-      px-5 py-2
+      px-4 sm:px-5 py-1.5 sm:py-2
       rounded-full
       text-xs font-semibold
       tracking-widest uppercase
@@ -113,21 +113,23 @@ export default function SchedulePage() {
 
   {/* Main Heading */}
   <h1 className="
-    text-4xl md:text-5xl lg:text-6xl
+    text-3xl sm:text-4xl md:text-5xl lg:text-6xl
     font-extrabold
     text-[#3b3f8f]
     tracking-tight
+    px-2
   ">
     Complete Event Schedule
   </h1>
 
   {/* Subheading */}
   <p className="
-    mt-6
+    mt-4 sm:mt-6
     max-w-3xl mx-auto
-    text-base md:text-lg
+    text-sm sm:text-base md:text-lg
     text-[#6b6f9c]
     leading-relaxed
+    px-4
   ">
     Hourly timeline of workshops, competitions, performances, and keynote
     sessions across three exciting days
@@ -136,8 +138,8 @@ export default function SchedulePage() {
 
 
         {/* Day Selector */}
-        <div className="relative mb-24">
-          <div className="h-12 rounded-full bg-gradient-to-r from-[#3A2B73] to-[#5A3E9C]" />
+        <div className="relative mb-16 sm:mb-24">
+          <div className="h-10 sm:h-12 rounded-full bg-gradient-to-r from-[#3A2B73] to-[#5A3E9C]" />
           <div className="absolute inset-0 flex items-center justify-between px-2">
             {[
               { key: "day1", label: "DAY 1", date: "7th February" },
@@ -146,15 +148,15 @@ export default function SchedulePage() {
               <button
                 key={day.key}
                 onClick={() => setActiveDay(day.key as "day1" | "day2")}
-                className={`flex-1 mx-1 h-12 rounded-full text-sm font-semibold transition-all
+                className={`flex-1 mx-1 h-10 sm:h-12 rounded-full text-xs sm:text-sm font-semibold transition-all
                   ${
                     activeDay === day.key
                       ? "bg-gradient-to-r from-[#F68318] to-[#FDC008] text-white shadow-lg"
                       : "text-white/70 hover:text-white"
                   }`}
               >
-                <div>{day.label}</div>
-                <div className="text-xs font-normal">{day.date}</div>
+                <div className="text-xs sm:text-sm">{day.label}</div>
+                <div className="text-[10px] sm:text-xs font-normal">{day.date}</div>
               </button>
             ))}
           </div>
@@ -162,42 +164,41 @@ export default function SchedulePage() {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-1/2 top-0 h-full w-[2px] bg-gradient-to-b from-purple-500 to-orange-400 -translate-x-1/2" />
+          {/* Vertical line - hidden on small mobile */}
+          <div className="hidden sm:block absolute left-1/2 top-0 h-full w-[2px] bg-gradient-to-b from-purple-500 to-orange-400 -translate-x-1/2" />
 
-          <div className="space-y-16">
+          <div className="space-y-12 sm:space-y-16">
             {scheduleData[activeDay].map((event, index) => (
               <div
                 key={index}
                 className={`relative flex ${
                   event.side === "left"
-                    ? "justify-start pr-[52%]"
-                    : "justify-end pl-[52%]"
+                    ? "sm:justify-start sm:pr-[52%]"
+                    : "sm:justify-end sm:pl-[52%]"
                 }`}
               >
-                {/* Dot */}
-                <div className="absolute left-1/2 top-6 w-4 h-4 rounded-full bg-white border-4 border-purple-600 -translate-x-1/2 z-10" />
+                {/* Dot - hidden on small mobile */}
+                <div className="hidden sm:block absolute left-1/2 top-6 w-4 h-4 rounded-full bg-white border-4 border-purple-600 -translate-x-1/2 z-10" />
 
                 {/* Card */}
 <div
   className="
-    bg-white w-full max-w-md
+    bg-white w-full sm:max-w-md
     rounded-2xl
     border border-transparent
     shadow-md
-    p-6
+    p-4 sm:p-6
     transition-all duration-300 ease-out
     hover:-translate-y-2
     hover:shadow-2xl
     hover:border-[#633090]
   "
->
-  {/* Time pill */}
-  <div className="flex items-center gap-2 mb-4">
+>{/* Time pill */}
+  <div className="flex items-center gap-2 mb-3 sm:mb-4">
     <span
       className="
         text-xs font-semibold
-        px-4 py-1.5
+        px-3 sm:px-4 py-1 sm:py-1.5
         rounded-full
         bg-[#F4EEFB]
         text-[#633090]
@@ -208,34 +209,35 @@ export default function SchedulePage() {
   </div>
 
   {/* Title */}
-  <h3 className="text-xl font-semibold text-[#321951] leading-snug">
+  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#321951] leading-snug">
     {event.title}
   </h3>
 
   {/* Location */}
   {event.location && (
-    <p className="mt-2 text-sm text-[#F68318] flex items-center gap-1">
+    <p className="mt-2 text-xs sm:text-sm text-[#F68318] flex items-center gap-1">
       <span>📍</span>
       {event.location}
     </p>
   )}
 
   {/* Divider1 */}
-{event.speaker1 && <div className="my-5 h-px bg-slate-200" />}
+{event.speaker1 && <div className="my-4 sm:my-5 h-px bg-slate-200" />}
 
 {/* Speaker1 block */}
 {event.speaker1 && (
-  <div className="flex items-start gap-3">
+  <div className="flex items-start gap-2 sm:gap-3">
     {/* Speaker Icon */}
     <div
       className="
         flex items-center justify-center
-        w-12 h-12
+        w-10 h-10 sm:w-12 sm:h-12
         // rounded-full
         bg-[#F4EEFB]
         text-[#633090]
-        text-md
+        text-sm sm:text-md
         font-semibold
+        flex-shrink-0
       "
     >
       👤
@@ -248,7 +250,7 @@ export default function SchedulePage() {
       </p>
 
       {/* Name */}
-      <p className="text-sm font-semibold text-[#321951]">
+      <p className="text-xs sm:text-sm font-semibold text-[#321951]">
         {event.speaker1}
         <p className="text-xs text-slate-500"> {event.position1}</p>
       </p>
@@ -257,21 +259,22 @@ export default function SchedulePage() {
   </div>
 )}
   {/* Divider2 */}
-{event.speaker2 && <div className="my-5 h-px bg-slate-200" />}
+{event.speaker2 && <div className="my-4 sm:my-5 h-px bg-slate-200" />}
 
 {/* Speaker2 block */}
 {event.speaker2 && (
-  <div className="flex items-start gap-3">
+  <div className="flex items-start gap-2 sm:gap-3">
     {/* Speaker Icon */}
     <div
       className="
         flex items-center justify-center
-        w-12 h-12
+        w-10 h-10 sm:w-12 sm:h-12
         // rounded-full
         bg-[#F4EEFB]
         text-[#633090]
-        text-md
+        text-sm sm:text-md
         font-semibold
+        flex-shrink-0
       "
     >
       👤
@@ -284,7 +287,7 @@ export default function SchedulePage() {
       </p>
 
       {/* Name */}
-      <p className="text-sm font-semibold text-[#321951]">
+      <p className="text-xs sm:text-sm font-semibold text-[#321951]">
         {event.speaker2}
         <p className="text-xs text-slate-500"> {event.position2}</p>
       </p>
@@ -293,21 +296,22 @@ export default function SchedulePage() {
   </div>
 )}
   {/* Divider3 */}
-{event.speaker3 && <div className="my-5 h-px bg-slate-200" />}
+{event.speaker3 && <div className="my-4 sm:my-5 h-px bg-slate-200" />}
 
 {/* Speaker3 block */}
 {event.speaker3 && (
-  <div className="flex items-start gap-3">
+  <div className="flex items-start gap-2 sm:gap-3">
     {/* Speaker Icon */}
     <div
       className="
         flex items-center justify-center
-        w-12 h-12
+        w-10 h-10 sm:w-12 sm:h-12
         // rounded-full
         bg-[#F4EEFB]
         text-[#633090]
-        text-md
+        text-sm sm:text-md
         font-semibold
+        flex-shrink-0
       "
     >
       👤
@@ -320,7 +324,7 @@ export default function SchedulePage() {
       </p>
 
       {/* Name */}
-      <p className="text-sm font-semibold text-[#321951]">
+      <p className="text-xs sm:text-sm font-semibold text-[#321951]">
         {event.speaker3}
         <p className="text-xs text-slate-500"> {event.position3}</p>
       </p>
