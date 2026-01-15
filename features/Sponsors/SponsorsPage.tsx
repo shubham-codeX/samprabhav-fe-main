@@ -1,4 +1,3 @@
-import { SponsorCard } from "./SponsorCard";
 import { SponsorCardFlexible } from "./SponsorCardFlexible";
 
 export function SponsorsPage() {
@@ -41,7 +40,9 @@ export function SponsorsPage() {
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f]">
           Platinum Sponsors
         </h2>
-        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">Our Platinum Partners</p>
+        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">
+          Our Platinum Partners
+        </p>
 
         {/* Sponsor Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-6 md:px-8">
@@ -56,7 +57,9 @@ export function SponsorsPage() {
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f]">
           Gold Sponsors
         </h2>
-        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">Our Gold Partners</p>
+        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">
+          Our Gold Partners
+        </p>
 
         {/* Sponsor Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6 md:px-8">
@@ -71,7 +74,9 @@ export function SponsorsPage() {
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f]">
           Strategic Partners
         </h2>
-        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">Our Strategic Partners</p>
+        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">
+          Our Strategic Partners
+        </p>
 
         {/* Sponsor Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-6 md:px-8">

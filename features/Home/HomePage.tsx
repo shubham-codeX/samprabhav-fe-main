@@ -1,10 +1,7 @@
 import Hero from "@/features/Home/Hero";
-import FooterPage from "../Footer/FooterPage";
 import About from "@/app/about/page";
-import { Speaker } from "lucide-react";
 import SchedulePage from "@/app/schedule/page";
 import Sponsors from "@/app/sponsors/page";
-import { SpeakerCard } from "../Speakers/SpeakerCard";
 import Speakers from "@/app/speakers/page";
 
 const HomePage = () => {

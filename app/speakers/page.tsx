@@ -2,7 +2,6 @@ import { Mic, Building2, Award, Star, Briefcase } from "lucide-react";
 import { speakers } from "../../features/Speakers/speakersData";
 import { SpeakerCard } from "../../features/Speakers/SpeakerCard";
 import Image from "next/image";
-import image from "next/image";
 
 const Speakers = () => {
   const testimonials = [

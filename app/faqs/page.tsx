@@ -6,7 +6,6 @@ import FAQHeader from "@/features/Faqs/FAQHeader";
 import SearchBar from "@/features/Faqs/SearchBar";
 import CategoryTabs from "@/features/Faqs/CategoryTabs";
 import FAQSections from "@/features/Faqs/FAQSections";
-import FooterPage from "@/features/Footer/FooterPage";
 
 export default function FAQPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");

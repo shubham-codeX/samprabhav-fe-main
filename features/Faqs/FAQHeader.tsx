@@ -6,8 +6,8 @@ export default function FAQHeader() {
           Frequently Asked Questions
         </h1>
         <p className="text-slate-600 text-lg">
-          Find answers to common questions about SAMPRABHAV 2026. Can't find
-          what you're looking for?{" "}
+          Find answers to common questions about SAMPRABHAV 2026. Can&apos;t find
+          what you&apos;re looking for?{" "}
           <a
             href="#contact"
             className="text-blue-600 hover:text-blue-700 font-medium"

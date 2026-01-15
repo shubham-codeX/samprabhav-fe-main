@@ -1,13 +1,12 @@
 import Image from "next/image";
+import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function FooterPage() {
   return (
     <footer className="bg-[#3b2c7f] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-
         {/* Left Column - About + Logo + Social */}
         <div className="space-y-3 sm:space-y-4 md:col-span-2 md:-mt-5">
-
           {/* Logo + Title */}
           <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3 sm:gap-4">
             <Image
@@ -24,12 +23,12 @@ export default function FooterPage() {
           </div>
 
           <p className="text-gray-200 text-xs sm:text-sm leading-relaxed max-w-l px-2 sm:px-0">
-            A national-level pharmaceutical colloquium organized by the students of the
-            Department of Pharmaceutical Management (DOPM) as part of its longstanding
-            annual tradition. The colloquium serves as a dynamic platform that brings
-            together leading pharmaceutical professionals from across the country to
-            engage in meaningful dialogue, exchange perspectives, and foster new
-            professional collaborations.
+            A national-level pharmaceutical colloquium organized by the students
+            of the Department of Pharmaceutical Management (DOPM) as part of its
+            longstanding annual tradition. The colloquium serves as a dynamic
+            platform that brings together leading pharmaceutical professionals
+            from across the country to engage in meaningful dialogue, exchange
+            perspectives, and foster new professional collaborations.
           </p>
 
           {/* Social Media Icons */}
@@ -39,13 +38,9 @@ export default function FooterPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src="/insta.png"
-                alt="Instagram"
-                width={24}
-                height={24}
-                className="sm:w-7 sm:h-7 hover:scale-110 transition"
-              />
+              <div className="bg-white rounded-full p-2 flex items-center justify-center hover:scale-110 transition">
+                <FaInstagram className="w-4 h-4 text-[#3b2c7f]" />
+              </div>
             </a>
 
             <a
@@ -53,13 +48,9 @@ export default function FooterPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src="/linkedin.png"
-                alt="LinkedIn"
-                width={24}
-                height={24}
-                className="sm:w-7 sm:h-7 hover:scale-110 transition"
-              />
+              <div className="bg-white rounded-full p-2 flex items-center justify-center hover:scale-110 transition">
+                <FaLinkedinIn className="w-4 h-4 text-[#3b2c7f]" />
+              </div>
             </a>
 
             <a
@@ -67,13 +58,9 @@ export default function FooterPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src="/fb.png"
-                alt="Facebook"
-                width={24}
-                height={24}
-                className="sm:w-7 sm:h-7 hover:scale-110 transition"
-              />
+              <div className="bg-white rounded-full p-2 flex items-center justify-center hover:scale-110 transition">
+                <FaFacebookF className="w-4 h-4 text-[#3b2c7f]" />
+              </div>
             </a>
           </div>
         </div>
@@ -106,9 +93,12 @@ export default function FooterPage() {
             <li className="flex items-start justify-center md:justify-start gap-2">
               <span>📍</span>
               <span>
-                Department of Pharmaceutical Management,<br />
-                NIPER-Mohali, Sector-67,<br />
-                S.A.S. Nagar (Mohali)-160062,<br />
+                Department of Pharmaceutical Management,
+                <br />
+                NIPER-Mohali, Sector-67,
+                <br />
+                S.A.S. Nagar (Mohali)-160062,
+                <br />
                 Punjab, India
               </span>
             </li>
