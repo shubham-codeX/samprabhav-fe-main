@@ -54,9 +54,6 @@ const Speakers = () => {
         {/* =============== BUCKET 2 ===================== */}
         <div className="mb-12 sm:mb-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#321951] rounded-lg text-white flex-shrink-0">
-              <Mic size={20} className="sm:w-6 sm:h-6" />
-            </div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#313575]">
               Driving Patient Impact Through Next-Generation Solutions
             </h2>
@@ -77,10 +74,7 @@ const Speakers = () => {
         {/*  =============== BUCKET 1 =====================  */}
         <div className="mb-12 sm:mb-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#633090] rounded-lg text-white flex-shrink-0">
-              <Building2 size={20} className="sm:w-6 sm:h-6" />
-            </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#633090]">
               Decoding Global Trends Redefining Life Sciences and Technology
             </h2>
           </div>
@@ -100,10 +94,7 @@ const Speakers = () => {
         {/* =============== BUCKET 3 ===================== */}
         <div className="mb-12 sm:mb-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#313575] rounded-lg text-white flex-shrink-0">
-              <Award size={20} className="sm:w-6 sm:h-6" />
-            </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#313575]">
               The Engines Behind Sustainable Enterprise: Where Talent, Ideas, and innovation take shape
             </h2>
             {/* <div className="flex-1 h-1 bg-gradient-to-r from-blue-600 to-transparent rounded-full"></div> */}
@@ -123,10 +114,7 @@ const Speakers = () => {
         {/* =============== BUCKET 4 =====================  */}
         <div className="mb-12 sm:mb-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#b22e37] rounded-lg text-white flex-shrink-0">
-              <Star size={20} className="sm:w-6 sm:h-6" />
-            </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#b22e37]">
               Reimagining Pharma Marketing for the next decade
             </h2>
           </div>
@@ -145,10 +133,7 @@ const Speakers = () => {
         {/*  =============== BUCKET 5 =====================   */}
         <div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-[#f68318] rounded-lg text-white flex-shrink-0">
-              <Briefcase size={20} className="sm:w-6 sm:h-6" />
-            </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#f68318]">
               BUCKET 5: From Insight to Impact: Shaping the future of Healthcare Strategy
             </h2>
             {/* <div className="flex-1 h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full"></div> */}

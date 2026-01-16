@@ -160,9 +160,7 @@ const stats = [
                 hover:shadow-2xl
               "
             >
-              <p className="text-base sm:text-lg italic text-[#683bb7] mb-3 sm:mb-4">
-                Socialize • Synergize • Specialize
-              </p>
+              {/* HEADING */}
 
               <div className="space-y-3 sm:space-y-4 text-[#666] leading-relaxed text-sm sm:text-base lg:text-lg">
                 <p>
