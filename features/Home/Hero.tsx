@@ -6,9 +6,9 @@ import CountdownTimer from "./CountdownTimer";
 import Link from "next/link";
 
 const backgroundImages = [
-  "/bg1.jpg",
-  "/bg2.jpg",
-  "/bg3.jpg",
+  "/bg1.JPG",
+  "/bg2.JPG",
+  "/bg3.JPG",
 ];
 
 const Hero = () => {
