@@ -14,7 +14,7 @@ export default function FooterPage() {
               alt="Samprav Logo"
               width={160}
               height={160}
-              className="object-contain w-44 sm:w-40 md:w-44 lg:w-60"
+              className="object-contain w-full sm:w-40 md:w-50 lg:w-74"
             />
           </div>
           {/* Description */}
