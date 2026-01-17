@@ -6,23 +6,22 @@ export default function FooterPage() {
     <footer className="bg-[#3b2c7f] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
         {/* Left Column - About + Logo + Social */}
-        <div className="space-y-3 sm:space-y-4 md:col-span-2 md:-mt-5">
+        <div className="sm:space-y-1 md:col-span-2 md:-mt-5">
           {/* Logo + Title */}
           <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3 sm:gap-4">
             <Image
               src="/logo.png"
               alt="Samprav Logo"
-              width={140}
-              height={140}
-              className="object-contain w-32 sm:w-36 md:w-40 lg:w-44"
+              width={160}
+              height={160}
+              className="object-contain w-44 sm:w-40 md:w-44 lg:w-60"
             />
-
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-yellow-400 text-center sm:text-left">
-              Samprabhav – Union of Magnates
-            </h2>
           </div>
-
+          {/* Description */}
           <p className="text-gray-200 text-xs sm:text-sm leading-relaxed max-w-l px-2 sm:px-0">
+            <span className="text-md sm:text-md md:text-md font-bold text-yellow-400 text-center sm:text-left mr-2">
+              Samprabhav – Union of Magnates
+            </span>
             A national-level pharmaceutical colloquium organized by the students
             of the Department of Pharmaceutical Management (DOPM) as part of its
             longstanding annual tradition. The colloquium serves as a dynamic
