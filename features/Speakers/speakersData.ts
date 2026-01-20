@@ -7,6 +7,38 @@ export interface Speaker {
 }
 
 export const speakers = {
+  /* ================== TOP ROLES ================== */
+
+  chiefGuest: [
+    {
+      id: 1,
+      name: "Prateek Dubey",
+      role: "Global CHRO, Mankind",
+      image: "/speakers/prateek.jpg",
+      link: "https://www.linkedin.com/in/prateek-dubey-45a62213",
+    },
+  ] as Speaker[],
+
+  guestOfHonor: [
+    {
+      id: 1,
+      name: "Gagann Atreja",
+      role: "President - Operations, Eris Lifesciences",
+      image: "/speakers/megha.png",
+      link: "https://www.linkedin.com/in/gagann-atreja-774ba22a",
+    },
+  ] as Speaker[],
+
+  chairPerson: [
+    {
+      id: 1,
+      name: "Dr. Vijay Charlu",
+      role: "President - India Business, CORONA Remedies",
+      image: "/speakers/vijay.jpg",
+      link: "https://www.linkedin.com/in/vijaycharlu?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqzPu2bkGSHiDVgXTNzylkw%3D%3D",
+    },
+  ] as Speaker[],
+
   keynote: [      //Bucket 2
         {
       id: 1,
@@ -54,7 +86,7 @@ export const speakers = {
       id: 2,
       name: "Mr. Hareshh Ratwani",
       role: "Founder, Director & CEO, Healthy Basket Pharmacy",
-      image: "/speakers/hareshh.jpg",
+      image: "/speakers/haresh.png",
       link: "https://www.linkedin.com/in/hareshh",
     },
   ] as Speaker[],

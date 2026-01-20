@@ -43,13 +43,63 @@ const Speakers = () => {
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-10 py-6 sm:py-8 md:py-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-3 sm:mb-4">
-            Industry Leaders & Experts
+            Meet Our Speakers
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed px-2">
             Learn from renowned pharmaceutical industry experts, mentors, and
             professionals who will guide you through SAMPRABHAV 2026
           </p>
         </div>
+
+        {/* ================== TOP DIGNITARIES ================== */}
+        <div className="mb-14 sm:mb-18">
+
+          {/* ================== Chief Guest ================== */}
+          <div className="flex flex-col items-center gap-0 mb-5">
+            <h2 className="text-l sm:text-xl md:text-xl font-bold text-[#313575] text-center">
+              Chief Guest
+            </h2>
+
+            {speakers.chiefGuest.map((speaker) => (
+              <div key={speaker.id} className="w-full max-w-md">
+                <SpeakerCard speaker={speaker} category="chiefGuest" />
+              </div>
+            ))}
+          </div>
+
+          {/* ================== Guest of Honour & Chairperson ================== */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+                      {/* Chairperson */}
+            <div className="flex flex-col items-center gap-0">
+              <h2 className="text-l sm:text-xl md:text-xl font-bold text-[#313575] text-center">
+                Chairperson
+              </h2>
+
+              {speakers.chairPerson.map((speaker) => (
+                <div key={speaker.id} className="w-full max-w-md">
+                  <SpeakerCard speaker={speaker} category="chairPerson" />
+                </div>
+              ))}
+            </div>
+
+            {/* Guest of Honour */}
+            <div className="flex flex-col items-center gap-0">
+              <h2 className="text-l sm:text-xl md:text-xl font-bold text-[#313575] text-center">
+                Guest of Honour
+              </h2>
+
+              {speakers.guestOfHonor.map((speaker) => (
+                <div key={speaker.id} className="w-full max-w-md">
+                  <SpeakerCard speaker={speaker} category="guestOfHonor" />
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+
+
 
         {/* =============== BUCKET 2 ===================== */}
         <div className="mb-12 sm:mb-16">

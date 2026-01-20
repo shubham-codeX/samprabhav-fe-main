@@ -24,6 +24,10 @@ export const faqData = [
         q: "How will this conclave help my career?",
         a: "You will gain real-world industry insights, upskill in pharma management,and connect directly with recruiters and industry pioneers.",  
       },
+            {
+        q: "What is the \"Pharmasapience\" exclusive test?",
+        a: "Event sponsor Pharmasapience will conduct a pre-event quiz for registrants. Top 100 rankers receive certificates and discounts of up to 100% on GPAT-NIPER courses.",
+      },
     ]
   },
   
@@ -52,50 +56,8 @@ export const faqData = [
     category: "Participation",
     questions: [
       {
-        q: "What documents do I need to bring?",
-        a: "Please bring a valid ID, your registration confirmation, and any specific documents required for your event category.",
-      },
-      {
-        q: "Can I participate as a team?",
-        a: "Yes, team participation is allowed for most events. Check individual event rules for team size and composition requirements.",
-      },
-      {
         q: "What are the main perks for student participants?",
         a: "Benefits include a registration kit, certificates, a NIPER campus tour, networking with industry leaders, and live event experiences.",
-      },
-    ],
-  },
-  {
-    category: "Events & Schedule",
-    questions: [
-      {
-        q: "What events are available?",
-        a: "We offer a variety of events including technical competitions, workshops, and cultural activities. Visit the events page for the complete list.",
-      },
-      {
-        q: "What is the event schedule?",
-        a: "The detailed schedule will be published one week before the event. Regular updates will be sent to registered participants.",
-      },
-      {
-        q: "What topics will be discussed at Samprabhav 2026?",
-        a: "Key themes include global life science trends, next-gen healthcare solutions, sustainable enterprise, and future pharma marketing strategies.",
-      },
-      {
-        q: "What is the \"Pharma Sapience\" exclusive test?",
-        a: "Event sponsor Pharma Sapience will conduct a pre-event quiz for registrants. Top 100 rankers receive certificates and discounts of up to 100% on GPAT-NIPER courses.",
-      },
-    ],
-  },
-  {
-    category: "Prizes & Certificates",
-    questions: [
-      {
-        q: "What prizes will be awarded?",
-        a: "Winners in each category will receive cash prizes, trophies, and certificates. Prize amounts vary by event.",
-      },
-      {
-        q: "Will I receive a certificate?",
-        a: "Yes, all participants will receive a certificate of participation. Winners will receive additional certificates.",
       },
     ],
   },

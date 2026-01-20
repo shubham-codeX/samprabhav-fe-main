@@ -10,17 +10,18 @@ export default function FooterPage() {
           {/* Logo + Title */}
           <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3 sm:gap-4">
             <Image
-              src="/logo.png"
+              src="/f.png"
               alt="Samprav Logo"
-              width={160}
-              height={160}
+              width={400}
+              height={200}
+              // fill
               className="object-contain w-full sm:w-40 md:w-50 lg:w-74"
             />
           </div>
           {/* Description */}
-          <p className="text-gray-200 text-xs sm:text-sm leading-relaxed max-w-l px-2 sm:px-0">
+          <p className="text-gray-200 text-xs sm:text-sm leading-relaxed max-w-l px-2 sm:px-0 lg:mt-6 sm:mt-4 md:mt-6">
             <span className="text-md sm:text-md md:text-md font-bold text-yellow-400 text-center sm:text-left mr-2">
-              Samprabhav – Union of Magnates
+              Samprabhav - Union of Magnates
             </span>
             A national-level pharmaceutical colloquium organized by the students
             of the Department of Pharmaceutical Management (DOPM) as part of its

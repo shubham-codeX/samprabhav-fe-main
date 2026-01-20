@@ -6,9 +6,7 @@ import { useState } from "react";
 export default function Glimpses() {
   // Only filenames – no id, no alt, no repetition
   const imageFiles = [
-    "img1.JPG","img2.JPG","img3.JPG","img4.JPG","img5.JPG","img6.JPG","img7.JPG","img8.JPG","img9.JPG","img10.JPG",
-    "img11.JPG","img12.JPG","img13.JPG","img14.JPG","img15.JPG","img16.JPG","img17.JPG","img18.JPG","img19.JPG","img20.JPG",
-    "img21.JPG","img22.JPG","img23.JPG","img24.JPG","img25.JPG","img26.JPG","img27.JPG","img28.JPG","img29.JPG","img0.JPG",
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","10b.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg","23.jpg",
   ];
 
   const [activeImage, setActiveImage] = useState<string | null>(null);
