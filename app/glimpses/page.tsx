@@ -18,12 +18,98 @@ export default function Glimpses() {
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-3 sm:mb-4 px-2">
-            Glimpses of SAMPRABHAV
+            Glimpses of SAMPRABHAV 2025
           </h1>
           <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto px-2">
             Relive the memorable moments and vibrant performances
           </p>
         </div>
+
+        {/* Event Information */}
+      <div className="mb-14 sm:mb-20 space-y-10">
+
+      {/* Chief Guest & Chairperson */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="rounded-2xl bg-white/70 backdrop-blur p-6 shadow-md border border-purple-100 text-center">
+          <h3 className="text-base sm:text-lg font-semibold text-purple-800 mb-3">
+            Chief Guest
+          </h3>
+          <p className="text-blue-900 font-medium text-sm sm:text-base">
+            Dr. Subba Rao Chaganti
+          </p>
+          <p className="text-xs sm:text-sm text-gray-600">
+            Executive Coach, Mentor, Author
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-white/70 backdrop-blur p-6 shadow-md border border-blue-100 text-center">
+          <h3 className="text-base sm:text-lg font-semibold text-blue-800 mb-3">
+            Chairperson
+          </h3>
+          <p className="text-blue-900 font-medium text-sm sm:text-base">
+            Dr. Vinay Lohariwala
+          </p>
+          <p className="text-xs sm:text-sm text-gray-600">
+            Managing Director, Innova Captab Ltd.
+          </p>
+        </div>
+      </div>
+
+        {/* Speakers */}
+        <div className="rounded-2xl bg-white/70 backdrop-blur p-6 shadow-md border border-indigo-100">
+          <h3 className="text-lg sm:text-xl font-semibold text-indigo-900 mb-6 text-center">
+            Speakers & Panelists
+          </h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 text-sm">
+          {[
+            ["Mr. Harit Mohan", "Founder & CEO, Signicent | Global Co-Chair, TiE Univ."],
+            ["Dr. Ankit Jain", "Senior Segment Manager – Applied Genomics, Illumina"],
+            ["Tavinder Jit Singh Vasudeva", "President & CBO, Microlabs"],
+            ["Mr. Gopal Rao", "AVP – Business Development & Licensing, Biocon Biologics"],
+            ["Ajayy Kumar Shukla", "Sales Manager, Medtronic"],
+            ["Ms. Komal Sharma Talwar", "Founder, TT Consultants | Founder & Director, XL"],
+            ["Mr. Satish Kumar Arora", "President, TiE Chandigarh | Angel Investor"],
+            ["Megha Soni", "Associate Director – People Success, Solutionec"],
+            ["Uday Kanth", "Senior Manager – HR, Trinity Life Sciences"],
+            ["Mr. Virendra Kumar", "Founder & CEO, AdametNext"],
+            ["Ms. Ritu Rana", "Senior Manager – Forecasting CoE, Axtria"],
+            ["Mr. Suresh Pemmaraju", "AVP, Molekule Consulting"],
+          ].map(([name, role]) => (
+            <div
+              key={name}
+              className="space-y-1 text-center sm:text-left"
+            >
+              <p className="font-medium text-blue-900 text-sm sm:text-base">
+                {name}
+              </p>
+              <p className="text-gray-600 text-xs sm:text-sm">
+                {role}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+          {/* Agendas */}
+          <div className="rounded-2xl bg-gradient-to-br from-purple-600 to-blue-600 text-white p-6 sm:p-8 shadow-lg">
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center">
+              Agendas & Thematic Buckets
+            </h3>
+
+            <ol className="list-decimal list-inside space-y-3 text-sm sm:text-base text-center sm:text-left">
+              <li>Fueling Pharma Success: The Power of Digital and Global Marketing</li>
+              <li>Pioneering Trends: Reshaping the Pharmaceutical Landscape</li>
+              <li>
+                Re-envisioning Boundaries: Transformative Strategies for Business and
+                Product Excellence
+              </li>
+              <li>Redefining Talent Paradigms: Crafting the Future Workforce</li>
+              <li>Pharma Horizons: Innovation, Analytics, and Strategic Transformation</li>
+            </ol>
+          </div>
+        </div>
+
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">{/* Rest of the image grid */}
