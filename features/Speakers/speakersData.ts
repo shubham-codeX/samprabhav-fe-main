@@ -121,7 +121,7 @@ export const speakers = {
       id: 3,
       name: "Mr. Mihir Pujara",
       role: "Associate Director, AdametNext",
-      image: "/speakers/mihir.jpg",
+      image: "/speakers/mihir2.jpg",
       link: "https://www.linkedin.com/in/mihir-pujara-2a993528/",
     },
   ] as Speaker[],

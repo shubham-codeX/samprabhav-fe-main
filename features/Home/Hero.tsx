@@ -6,9 +6,10 @@ import CountdownTimer from "./CountdownTimer";
 import Link from "next/link";
 
 const backgroundImages = [
-  "/bg1.JPG",
-  "/bg2.JPG",
-  "/bg3.JPG",
+  "/BG1.JPG",
+  "/BG2.JPG",
+  "/BG3.JPG",
+  "/BG4.JPG"
 ];
 
 const Hero = () => {
@@ -79,7 +80,7 @@ const Hero = () => {
           </p>
 
           <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl text-center whitespace-nowrap">
-            Co-powered by: <span className="font-semibold text-[#FDC008]">Pharmasapinace</span>
+            Co-powered by: <span className="font-semibold text-[#FDC008]">Pharmasapience</span>
           </p>
         </div>
 
