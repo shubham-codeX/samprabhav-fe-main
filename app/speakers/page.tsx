@@ -183,7 +183,7 @@ const Speakers = () => {
         <div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#f68318]">
-              BUCKET 5: From Insight to Impact: Shaping the future of Healthcare Strategy
+              From Insight to Impact: Shaping the future of Healthcare Strategy
             </h2>
             {/* <div className="flex-1 h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full"></div> */}
           </div>
