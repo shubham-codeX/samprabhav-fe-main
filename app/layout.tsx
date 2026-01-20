@@ -13,6 +13,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Samprabhav 2026",
   description: "Union of Magnets",
+  
 };
 
 export default function RootLayout({

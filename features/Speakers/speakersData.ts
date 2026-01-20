@@ -51,7 +51,7 @@ export const speakers = {
       id: 2,
       name: "Mr. Rajshekhar Rao	",
       role: "Business Head, Stryker",
-      image: "/speakers/rajshekhar.jpg",
+      image: "/speakers/rajshekhar1.jpg",
       link: "https://www.linkedin.com/in/rajshekhar-rao-b31405b5/",
     },
   ] as Speaker[],
@@ -96,7 +96,7 @@ export const speakers = {
       id: 1,
       name: "Megha Choubey",
       role: "Manager Business Compliance",
-      image: "/speakers/megha.png",
+      image: "/speakers/megha1.png",
       link: "https://www.linkedin.com/in/megha-choubey-56a3a73a/",
     },
 
