@@ -65,10 +65,9 @@ export function SpeakerCard({ speaker, category }: SpeakerCardProps) {
       {/* Content */}
       <div className="flex-1 flex flex-col justify-center min-w-0">
         <h3
-          className={`font-semibold truncate ${
-            "text-base sm:text-lg md:text-xl"
-          }`}
-        >
+  className="font-semibold text-base sm:text-lg md:text-xl text-blue-900 leading-snug break-words"
+>
+
           {speaker.link ? (
             <Link
               href={speaker.link}

@@ -1,21 +1,40 @@
+import Image from "next/image";
+
 interface SponsorCardProps {
-  title: string;
+  name: string;
+  logo: string;
+  type: string; // TITLE SPONSOR, PLATINUM SPONSOR, etc.
 }
 
-export function SponsorCard({ title }: SponsorCardProps) {
+export function SponsorCard({ name, logo, type }: SponsorCardProps) {
   return (
-    <div className="relative w-xl bg-white border-2 border-pink-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-      {/* Logo Placeholder */}
-      <div className="pt-20 px-6 pb-6">
-        <div className="bg-gradient-to-b from-gray-100 to-gray-50 rounded-2xl h-32 flex items-center justify-center text-gray-400">
-          LOGO
-        </div>
+    <div
+      className="
+        bg-white rounded-3xl border-2 border-blue-300
+        shadow-[0_10px_30px_rgba(0,0,0,0.1)]
+        p-6 sm:p-8
+        flex flex-col items-center text-center
+      "
+    >
+      {/* Logo */}
+      <div className="relative w-40 h-24 sm:w-44 sm:h-28 mb-6">
+        <Image
+          src={logo}
+          alt={name}
+          fill
+          className="object-contain"
+        />
       </div>
 
-      {/* Title */}
-      <div className="px-6 py-4 border-t border-gray-200">
-        <p className="text-xl italic text-gray-700">{title}</p>
-      </div>
+      {/* Sponsor Name */}
+      <h3 className="text-lg sm:text-xl font-semibold text-[#1e2b5b] mb-2">
+        {name}
+      </h3>
+
+      {/* Sponsor Type */}
+      <p className="text-xs sm:text-sm tracking-widest text-red-600 font-semibold">
+        {type}
+      </p>
     </div>
   );
 }

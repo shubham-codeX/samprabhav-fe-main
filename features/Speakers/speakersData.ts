@@ -24,7 +24,7 @@ export const speakers = {
       id: 1,
       name: "Gagann Atreja",
       role: "President - Operations, Eris Lifesciences",
-      image: "/speakers/megha.png",
+      image: "/speakers/gagan.png",
       link: "https://www.linkedin.com/in/gagann-atreja-774ba22a",
     },
   ] as Speaker[],
@@ -85,7 +85,7 @@ export const speakers = {
     {
       id: 2,
       name: "Mr. Hareshh Ratwani",
-      role: "Founder, Director & CEO, Healthy Basket Pharmacy",
+      role: "SBU Head - Emerging Pharma Markets/ROW, Esmero Research Pvt. Ltd.",
       image: "/speakers/haresh.png",
       link: "https://www.linkedin.com/in/hareshh",
     },
@@ -95,7 +95,7 @@ export const speakers = {
     {
       id: 1,
       name: "Megha Choubey",
-      role: "Manager Business Compliance",
+      role: "Manager Business Compliance, Abbott",
       image: "/speakers/megha1.png",
       link: "https://www.linkedin.com/in/megha-choubey-56a3a73a/",
     },

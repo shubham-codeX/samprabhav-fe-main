@@ -201,7 +201,7 @@ const stats = [
               {/* Placeholder for event image */}
               <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                 <Image
-                  src="/random.png"
+                  src="/DOPM_Photo.jpg"
                   alt="Samprabhav 2026 Event"
                   fill
                   className="object-cover"

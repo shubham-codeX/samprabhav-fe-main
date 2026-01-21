@@ -6,7 +6,7 @@ import CountdownTimer from "./CountdownTimer";
 import Link from "next/link";
 
 const backgroundImages = [
-  "/BG1.JPG",
+  "/BG1.jpg",
   "/BG2.JPG",
   "/BG3.JPG",
   "/BG4.JPG"
@@ -97,30 +97,37 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-xs sm:max-w-none px-4 sm:px-0 mx-auto justify-center">{/* Register Button */}
-<Button
-  className="
-    px-6 sm:px-8 py-4 sm:py-6
-    text-base sm:text-lg
-    text-white
-    font-semibold
-    transition-all duration-300 ease-out
-    transform
 
-    bg-gradient-to-r
-    from-[#F68318]
-    to-[#FDC008]
+        <Link
+          href="https://forms.gle/T4bNSyXP65q1Qy5S7"
+          target="_blank"        // optional (opens in new tab)
+          rel="noopener noreferrer"
+        >
+        <Button
+          className="
+            px-6 sm:px-8 py-4 sm:py-6
+            text-base sm:text-lg
+            text-white
+            font-semibold
+            transition-all duration-300 ease-out
+            transform
 
-    hover:bg-gradient-to-r
-    hover:from-[#FDC008]
-    hover:to-[#F68318]
+            bg-gradient-to-r
+            from-[#F68318]
+            to-[#FDC008]
 
-    hover:font-extrabold
-    hover:scale-105
-    hover:-translate-y-0.5
-  "
->
-  Register Now
-</Button>
+            hover:bg-gradient-to-r
+            hover:from-[#FDC008]
+            hover:to-[#F68318]
+
+            hover:font-extrabold
+            hover:scale-105
+            hover:-translate-y-0.5
+          "
+        >
+          Register Now
+        </Button>
+        </Link>
 
 {/* View Schedule Button */}
 <Link href="/schedule" className="w-full sm:w-auto">

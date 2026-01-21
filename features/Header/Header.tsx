@@ -171,6 +171,11 @@ export function Header() {
           </nav>
 
           {/* Desktop Register Button */}
+          <Link
+          href="https://forms.gle/T4bNSyXP65q1Qy5S7"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
           <Button
             className="
               hidden lg:block
@@ -196,6 +201,7 @@ export function Header() {
           >
             Register Now
           </Button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -261,20 +267,27 @@ export function Header() {
             >
               FAQs
             </Link>
-            <Button
-              onClick={() => setIsMenuOpen(false)}
-              className="
-                w-full
-                px-6 py-3
-                text-white
-                font-semibold
-                bg-gradient-to-r
-                from-[#F68318]
-                to-[#FDC008]
-              "
-            >
-              Register Now
-            </Button>
+
+        <Link
+            href="https://forms.gle/T4bNSyXP65q1Qy5S7"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsMenuOpen(true)}
+            className="
+              block w-full text-center
+              px-6 py-3
+              text-white font-semibold
+              rounded-md
+              bg-gradient-to-r from-[#F68318] to-[#FDC008]
+              hover:from-[#FDC008] hover:to-[#F68318]
+              transition-all
+            "
+          >
+            Register Now
+        </Link>
+
+
+
           </nav>
         </div>
       )}

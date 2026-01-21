@@ -1,89 +1,73 @@
-import { SponsorCardFlexible } from "./SponsorCardFlexible";
+import { SponsorCard } from "./SponsorCard";
 
 export function SponsorsPage() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Header Section */}
-      <div className="pt-20 sm:pt-24 md:pt-26 text-center px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-3 sm:mb-4">
-          Sponsors & Partners
+    <main className="min-h-screen bg-gradient-to-br from-[#e7f7f4] to-[#f4fbff]">
+      
+      {/* Heading */}
+      <div className="pt-24 text-center px-4">
+        <h1 className="text-xl sm:text-4xl md:text-5xl font-bold text-black">
+          Our <span className="text-[#321951]">Sponsors</span>
         </h1>
-        <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-          Proud to be supported by industry leaders who believe in nurturing
-          talent and celebrating culture
-        </p>
-      </div>
 
-      {/* Title Sponsors Section */}
-      <div className="py-8 sm:py-10 md:py-12 text-center px-4">
-        <div className="flex items-center justify-center gap-3 mb-2">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f]">
-            Title Sponsors
-          </h2>
-        </div>
-        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">
-          Presenting Partners of SAMPRABHAV 2026
-        </p>
-
-        {/* Sponsor Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-6 md:px-8">
-          {/* Card 1 */}
-          <SponsorCardFlexible title="Innovating Tomorrow" width="w-xl" />
-
-          {/* Card 2 */}
-          <SponsorCardFlexible title="Building the Future" width="w-xl" />
+        <div className="flex justify-center items-center gap-4 mt-4">
+          <span className="w-12 h-[3px] bg-[#633090] rounded" />
+          <span className="w-29 h-[3px] bg-[#633090] rounded" />
         </div>
       </div>
 
-      {/* Platinum Sponsors Section */}
-      <div className="py-8 sm:py-10 md:py-12 text-center px-4">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f]">
-          Platinum Sponsors
-        </h2>
-        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">
-          Our Platinum Partners
-        </p>
-
-        {/* Sponsor Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-6 md:px-8">
-          <SponsorCardFlexible title="Platinum Sponsor 1" width="w-md" />
-          <SponsorCardFlexible title="Platinum Sponsor 2" width="w-md" />
-          <SponsorCardFlexible title="Platinum Sponsor 3" width="w-md" />
+      {/* Title Sponsors */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <SponsorCard
+            name="AdametNext"
+            logo="/sponsor_logos/adametnext.png"
+            type="TITLE SPONSOR"
+          />
+          <SponsorCard
+            name="PharmaSapience"
+            logo="/sponsor_logos/pharmasapience.png"
+            type="CO-TITLE SPONSOR"
+          />
         </div>
-      </div>
+      </section>
 
-      {/* Gold Sponsors Section */}
-      <div className="py-8 sm:py-10 md:py-12 text-center px-4">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f]">
-          Gold Sponsors
-        </h2>
-        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">
-          Our Gold Partners
-        </p>
-
-        {/* Sponsor Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6 md:px-8">
-          <SponsorCardFlexible title="Gold Sponsor 1" width="w-md" />
-          <SponsorCardFlexible title="Gold Sponsor 2" width="w-md" />
-          <SponsorCardFlexible title="Gold Sponsor 3" width="w-md" />
+      {/* Silver Sponsors */}
+      <section className="pb-20 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <SponsorCard
+            name="Advanced Pakiza Unani"
+            logo="/sponsor_logos/pakiza.PNG"
+            type="SILVER"
+          />
+          <SponsorCard
+            name="Bitta Studio"
+            logo="/sponsor_logos/bitta.png"
+            type="PHOTOGRAPHY"
+          />
+          <SponsorCard
+            name="PharmaVion"
+            logo="/sponsor_logos/bitta.png"
+            type="Media Partner"
+          />
+          <SponsorCard
+            name="Guru Nanak Sweets"
+            logo="/sponsor_logos/gns.PNG"
+            type="Food Partner"
+          />
+          <SponsorCard
+            name="Kitty The Master Baker"
+            logo="/sponsor_logos/kitty.PNG"
+            type="Food Partner"
+          />
+          <SponsorCard
+            name="True Rise Traveller"
+            logo="/sponsor_logos/true.png"
+            type="Travelling Partner"
+          />
         </div>
-      </div>
+      </section>
 
-      {/* Strategic Partners Section */}
-      <div className="py-8 sm:py-10 md:py-12 text-center px-4">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f]">
-          Strategic Partners
-        </h2>
-        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10 md:mb-12">
-          Our Strategic Partners
-        </p>
-
-        {/* Sponsor Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-6 md:px-8">
-          <SponsorCardFlexible title="Strategic Partners" width="w-xl" />
-          <SponsorCardFlexible title="Strategic Partners" width="w-xl" />
-        </div>
-      </div>
     </main>
   );
 }
