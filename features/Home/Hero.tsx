@@ -5,12 +5,7 @@ import { Button } from "@/components/ui/button";
 import CountdownTimer from "./CountdownTimer";
 import Link from "next/link";
 
-const backgroundImages = [
-  "/bg1.jpg",
-  "/bg2.jpg",
-  "/bg3.jpg",
-  "/bg4.jpg"
-];
+const backgroundImages = ["/bg1.JPG", "/bg2.JPG", "/bg3.JPG", "/BG4.JPG"];
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
@@ -53,7 +48,8 @@ const Hero = () => {
         <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl text-center max-w-xs sm:max-w-md md:max-w-2xl mb-4 sm:mb-6">
           Department of Pharmaceutical Management, NIPER (Mohali)
         </p>
-        <span className="
+        <span
+          className="
                       mb-3 sm:mb-4
                       px-4 sm:px-6 py-1.5 sm:py-2
                       rounded-full
@@ -62,49 +58,57 @@ const Hero = () => {
                       bg-[#FDC008]
                       shadow-md
                       uppercase
-                    ">
-                      Presents
-                    </span>
+                    "
+        >
+          Presents
+        </span>
         <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white text-center mb-6 sm:mb-8 tracking-tight pt-3 sm:pt-5"
-            style={{ fontFamily: "'Old Standard TT', serif" }}>
-              {/* <span className="text-[#313575]">SAM</span> */}
-              <span className="text-[#FDC008]">SAMPRABHAV</span>
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white text-center mb-6 sm:mb-8 tracking-tight pt-3 sm:pt-5"
+          style={{ fontFamily: "'Old Standard TT', serif" }}
+        >
+          {/* <span className="text-[#313575]">SAM</span> */}
+          <span className="text-[#FDC008]">SAMPRABHAV</span>
           <br />
           2026
         </h1>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-12 md:gap-20 mb-8 sm:mb-10 md:mb-12 px-2">
           <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl text-center whitespace-nowrap">
-            Powered by: <span className="font-semibold text-[#FDC008]">AdametNext</span>
+            Powered by:{" "}
+            <span className="font-semibold text-[#FDC008]">AdametNext</span>
           </p>
 
           <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl text-center whitespace-nowrap">
-            Co-powered by: <span className="font-semibold text-[#FDC008]">Pharmasapience</span>
+            Co-powered by:{" "}
+            <span className="font-semibold text-[#FDC008]">Pharmasapience</span>
           </p>
         </div>
-
 
         <CountdownTimer />
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 mb-8 sm:mb-10 md:mb-12 w-full max-w-xs sm:max-w-none px-4 sm:px-0 mx-auto justify-center">
           <div className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-md">
-            <span className="text-white text-xs sm:text-sm">📅 February 7-8, 2026</span>
+            <span className="text-white text-xs sm:text-sm">
+              📅 February 7-8, 2026
+            </span>
           </div>
           <div className="flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-md">
-            <span className="text-white text-xs sm:text-sm">📍 NIPER Mohali</span>
+            <span className="text-white text-xs sm:text-sm">
+              📍 NIPER Mohali
+            </span>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-xs sm:max-w-none px-4 sm:px-0 mx-auto justify-center">{/* Register Button */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-xs sm:max-w-none px-4 sm:px-0 mx-auto justify-center">
+          {/* Register Button */}
 
-        <Link
-          href="https://forms.gle/T4bNSyXP65q1Qy5S7"
-          target="_blank"        // optional (opens in new tab)
-          rel="noopener noreferrer"
-        >
-        <Button
-          className="
+          <Link
+            href="https://forms.gle/T4bNSyXP65q1Qy5S7"
+            target="_blank" // optional (opens in new tab)
+            rel="noopener noreferrer"
+          >
+            <Button
+              className="
             px-6 sm:px-8 py-4 sm:py-6
             text-base sm:text-lg
             text-white
@@ -124,16 +128,16 @@ const Hero = () => {
             hover:scale-105
             hover:-translate-y-0.5
           "
-        >
-          Register Now
-        </Button>
-        </Link>
+            >
+              Register Now
+            </Button>
+          </Link>
 
-{/* View Schedule Button */}
-<Link href="/schedule" className="w-full sm:w-auto">
-  <Button
-    variant="outline"
-    className="
+          {/* View Schedule Button */}
+          <Link href="/schedule" className="w-full sm:w-auto">
+            <Button
+              variant="outline"
+              className="
       w-full
       px-6 sm:px-8 py-4 sm:py-6
       text-base sm:text-lg
@@ -150,11 +154,10 @@ const Hero = () => {
       hover:border-[#F68318]
       hover:bg-transparent
     "
-  >
-    View Schedule
-  </Button>
-</Link>
-
+            >
+              View Schedule
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
