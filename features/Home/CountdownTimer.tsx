@@ -48,7 +48,7 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const targetDate = new Date("2026-02-07").getTime();
+      const targetDate = Date.UTC(2026, 1, 7, 4, 0, 0);
       const now = new Date().getTime();
       const difference = targetDate - now;
 

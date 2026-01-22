@@ -72,7 +72,7 @@ const scheduleData: Record<string, Event[]> = {
       title: "BUCKET 4: Reimagining Pharma Marketing for the next decade",
       location: "Central Auditorium",
       speaker1: "Megha Choubey",
-      position1: "Manager Business Compliance",
+      position1: "Manager Business Compliance, Abbott",
       side: "right",
     },
     {

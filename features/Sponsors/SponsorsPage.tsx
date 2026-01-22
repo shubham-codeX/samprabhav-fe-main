@@ -47,7 +47,7 @@ export function SponsorsPage() {
           />
           <SponsorCard
             name="PharmaVion"
-            logo="/sponsor_logos/bitta.png"
+            logo="/sponsor_logos/Pharmivion.jpg"
             type="Media Partner"
           />
           <SponsorCard
