@@ -8,12 +8,6 @@ export default function FAQHeader() {
         <p className="text-slate-600 text-lg">
           Find answers to common questions about SAMPRABHAV 2026. Can&apos;t find
           what you&apos;re looking for?{" "}
-          <a
-            href="#contact"
-            className="text-blue-600 hover:text-blue-700 font-medium"
-          >
-            Contact us!
-          </a>
         </p>
       </div>
     </div>

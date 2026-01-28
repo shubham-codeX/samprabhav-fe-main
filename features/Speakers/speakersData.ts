@@ -12,10 +12,10 @@ export const speakers = {
   chiefGuest: [
     {
       id: 1,
-      name: "Prateek Dubey",
-      role: "Global CHRO, Mankind",
+      name: "Mr. Satish Khanna",
+      role: "Founder of Fullife Healthcare Pvt. Ltd., Investor & Former Group President, Lupin Ltd.",
       image: "/speakers/prateek.jpg",
-      link: "https://www.linkedin.com/in/prateek-dubey-45a62213",
+      link: "https://www.linkedin.com/in/satish-khanna-599b78",
     },
   ] as Speaker[],
 
@@ -42,10 +42,10 @@ export const speakers = {
   keynote: [      //Bucket 2
         {
       id: 1,
-      name: "Mr. Tejaswi V",
-      role: "DGM - Sales, Terumo India",
-      image: "/speakers/tejaswi.png",
-      link: "https://www.linkedin.com/in/tejaswi-v-a1508411",
+      name: "Aditya Kumar Khanna",
+      role: "Executive Vice President & Head of Global Alliances, Commercial, Marketing & PMO - Biologics, Dr. Reddy's Laboratories Ltd.",
+      image: "/speakers/aditya.png",
+      link: "https://www.linkedin.com/in/khannaaditya",
     },
     {
       id: 2,
@@ -98,6 +98,13 @@ export const speakers = {
       role: "Manager Business Compliance, Abbott",
       image: "/speakers/megha1.png",
       link: "https://www.linkedin.com/in/megha-choubey-56a3a73a/",
+    },
+    {
+      id: 2,
+      name: "Mr. Tejaswi V",
+      role: "DGM - Sales, Terumo India",
+      image: "/speakers/tejaswi.png",
+      link: "https://www.linkedin.com/in/tejaswi-v-a1508411",
     },
 
   ] as Speaker[],

@@ -41,8 +41,8 @@ const scheduleData: Record<string, Event[]> = {
     {
       time: "02:00 PM - 03:30 PM",
       title: "BUCKET 2: Driving patient Impact Through Next-Generation Solutions",
-      speaker1: "Mr. Tejaswi V",
-      position1: "VDGM - Sales, Terumo India",
+      speaker1: "Aditya Kumar Khanna",
+      position1: "Executive Vice President & Head of Global Alliances, Commercial, Marketing & PMO - Biologics, Dr. Reddy's Laboratories Ltd.",
       speaker2: "Mr. Rajshekhar Rao",
       position2: "Business Head, Stryker",
       location: "Central Auditorium",
@@ -69,10 +69,12 @@ const scheduleData: Record<string, Event[]> = {
     },
     {
       time: "10:30 AM - 11:00 AM",
-      title: "BUCKET 4: Reimagining Pharma Marketing for the next decade",
+      title: "BUCKET 4: Reimagining Commercial Strategies for the Next Decade",
       location: "Central Auditorium",
       speaker1: "Megha Choubey",
       position1: "Manager Business Compliance, Abbott",
+      speaker2: "Mr. Tejaswi V",
+      position2: "DGM - Sales, Terumo India",
       side: "right",
     },
     {

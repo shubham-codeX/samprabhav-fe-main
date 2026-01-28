@@ -72,7 +72,7 @@ const Speakers = () => {
                       {/* Chairperson */}
             <div className="flex flex-col items-center gap-0">
               <h2 className="text-l sm:text-xl md:text-xl font-bold text-[#313575] text-center">
-                Chairperson
+                Honorary Chairperson
               </h2>
 
               {speakers.chairPerson.map((speaker) => (
@@ -164,7 +164,7 @@ const Speakers = () => {
         <div className="mb-12 sm:mb-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#b22e37]">
-              Reimagining Pharma Marketing for the next decade
+              Reimagining Commercial Strategies for the Next Decade
             </h2>
           </div>
 

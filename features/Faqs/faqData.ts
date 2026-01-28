@@ -2,8 +2,6 @@ export const categories = [
   "All",
   "Registration",
   "Participation",
-  "Events & Schedule",
-  "Prizes & Certificates",
   "Venue & Facilities",
   "General",
 ];

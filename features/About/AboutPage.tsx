@@ -123,7 +123,7 @@ const stats = [
     light: "rgba(253,190,40,0.2)",
   },
   {
-    value: "11+",
+    value: "7+",
     label: "Sponsors",
     icon: Award,
     color: "#B22E37",

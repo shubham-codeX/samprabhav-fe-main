@@ -46,7 +46,7 @@ export function SponsorsPage() {
             type="PHOTOGRAPHY"
           />
           <SponsorCard
-            name="PharmaVion"
+            name="PharmiVon"
             logo="/sponsor_logos/Pharmivion.jpg"
             type="Media Partner"
           />
