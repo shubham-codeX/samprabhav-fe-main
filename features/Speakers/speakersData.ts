@@ -14,7 +14,7 @@ export const speakers = {
       id: 1,
       name: "Mr. Satish Khanna",
       role: "Founder of Fullife Healthcare Pvt. Ltd., Investor & Former Group President, Lupin Ltd.",
-      image: "/speakers/prateek.jpg",
+      image: "/speakers/satish.png",
       link: "https://www.linkedin.com/in/satish-khanna-599b78",
     },
   ] as Speaker[],
@@ -22,7 +22,7 @@ export const speakers = {
   guestOfHonor: [
     {
       id: 1,
-      name: "Gagann Atreja",
+      name: "Mr. Gagann Atreja",
       role: "President - Operations, Eris Lifesciences",
       image: "/speakers/gagan.png",
       link: "https://www.linkedin.com/in/gagann-atreja-774ba22a",
@@ -42,7 +42,7 @@ export const speakers = {
   keynote: [      //Bucket 2
         {
       id: 1,
-      name: "Aditya Kumar Khanna",
+      name: "Mr. Aditya Kumar Khanna",
       role: "Executive Vice President & Head of Global Alliances, Commercial, Marketing & PMO - Biologics, Dr. Reddy's Laboratories Ltd.",
       image: "/speakers/aditya.png",
       link: "https://www.linkedin.com/in/khannaaditya",
@@ -67,7 +67,7 @@ export const speakers = {
     },
     {
       id: 2,
-      name: "Navneet S Tewatia",
+      name: "Mr. Navneet S Tewatia",
       role: "Lead Consultant - Policy & Advocacy, Medicines Patent Pool",
       image: "/speakers/navneet.png",
       link: "https://www.linkedin.com/in/navneet-s-tewatia-492b116/",
@@ -94,7 +94,7 @@ export const speakers = {
   specialPerformers: [  //Bucket 4
     {
       id: 1,
-      name: "Megha Choubey",
+      name: "Mrs. Megha Choubey",
       role: "Manager Business Compliance, Abbott",
       image: "/speakers/megha1.png",
       link: "https://www.linkedin.com/in/megha-choubey-56a3a73a/",
