@@ -71,7 +71,7 @@ const scheduleData: Record<string, Event[]> = {
       time: "10:30 AM - 11:00 AM",
       title: "BUCKET 4: Reimagining Commercial Strategies for the Next Decade",
       location: "Central Auditorium",
-      speaker1: "Mrs. Megha Choubey",
+      speaker1: "Ms. Megha Choubey",
       position1: "Manager Business Compliance, Abbott",
       speaker2: "Mr. Tejaswi V",
       position2: "DGM - Sales, Terumo India",

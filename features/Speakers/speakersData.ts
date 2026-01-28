@@ -94,7 +94,7 @@ export const speakers = {
   specialPerformers: [  //Bucket 4
     {
       id: 1,
-      name: "Mrs. Megha Choubey",
+      name: "Ms. Megha Choubey",
       role: "Manager Business Compliance, Abbott",
       image: "/speakers/megha1.png",
       link: "https://www.linkedin.com/in/megha-choubey-56a3a73a/",
