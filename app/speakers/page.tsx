@@ -98,7 +98,25 @@ const Speakers = () => {
           </div>
         </div>
 
+                {/*  =============== BUCKET 1 =====================  */}
+        <div className="mb-12 sm:mb-16">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#633090]">
+              Decoding Global Trends Redefining Life Sciences and Technology
+            </h2>
+          </div>
+          {/* <div className="flex-1 h-1 mb-5 bg-gradient-to-r from-[#633190] to-transparent rounded-full"></div> */}
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+            {speakers.workshop.map((speaker) => (
+              <SpeakerCard
+                key={speaker.id}
+                speaker={speaker}
+                category="workshop"
+              />
+            ))}
+          </div>
+        </div>
 
         {/* =============== BUCKET 2 ===================== */}
         <div className="mb-12 sm:mb-16">
@@ -115,26 +133,6 @@ const Speakers = () => {
                 key={speaker.id}
                 speaker={speaker}
                 category="keynote"
-              />
-            ))}
-          </div>
-        </div>
-
-        {/*  =============== BUCKET 1 =====================  */}
-        <div className="mb-12 sm:mb-16">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#633090]">
-              Decoding Global Trends Redefining Life Sciences and Technology
-            </h2>
-          </div>
-          {/* <div className="flex-1 h-1 mb-5 bg-gradient-to-r from-[#633190] to-transparent rounded-full"></div> */}
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {speakers.workshop.map((speaker) => (
-              <SpeakerCard
-                key={speaker.id}
-                speaker={speaker}
-                category="workshop"
               />
             ))}
           </div>

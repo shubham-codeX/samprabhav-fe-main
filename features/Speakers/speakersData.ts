@@ -58,30 +58,23 @@ export const speakers = {
 
   workshop: [   //Bucket 1
 
-        {
+    {
       id: 1,
+      name: "Dr. Navneet S Tewatia",
+      role: "Consultant - Policy & Advocacy, Medicines Patent Pool",
+      image: "/speakers/navneet.png",
+      link: "https://www.linkedin.com/in/navneet-s-tewatia-492b116/",
+    },
+            {
+      id: 2,
       name: "Mr. Varun Arora",
       role: "Principal Consultant, Agilisium Consulting",
       image: "/speakers/varun.png",
       link: "https://www.linkedin.com/in/varun-arora-pmp%C2%AE-cbap-b0047925/",
     },
-    {
-      id: 2,
-      name: "Mr. Navneet S Tewatia",
-      role: "Lead Consultant - Policy & Advocacy, Medicines Patent Pool",
-      image: "/speakers/navneet.png",
-      link: "https://www.linkedin.com/in/navneet-s-tewatia-492b116/",
-    },
   ] as Speaker[],
 
   judgesMentors: [  //Bucket 3
-    {
-      id: 1,
-      name: "Dr. Someshwar Komuravelly",
-      role: "Co-Founder and CDO at OrciMed Life Sciences",
-      image: "/speakers/someshwar.png",
-      link: "https://www.linkedin.com/in/dr-someshwar-komuravelly-a20ab71b8/",
-    },
     {
       id: 2,
       name: "Mr. Hareshh Ratwani",
@@ -89,6 +82,14 @@ export const speakers = {
       image: "/speakers/haresh.png",
       link: "https://www.linkedin.com/in/hareshh",
     },
+    {
+      id: 1,
+      name: "Dr. Someshwar Komuravelly",
+      role: "Co-Founder and CDO at OrciMed Life Sciences",
+      image: "/speakers/someshwar.png",
+      link: "https://www.linkedin.com/in/dr-someshwar-komuravelly-a20ab71b8/",
+    },
+    
   ] as Speaker[],
 
   specialPerformers: [  //Bucket 4
@@ -110,6 +111,13 @@ export const speakers = {
   ] as Speaker[],
 
   industryExperts: [  //Bucket 5
+        {
+      id: 2,
+      name: "Mr. Abhisek Hiteshi Arora",
+      role: "Project Leader, BCG",
+      image: "/speakers/abhisek.png",
+      link: "https://www.linkedin.com/in/link2abhiarora/",
+    },
     {
       id: 1,
       name: "Mr. Himanshu Sehgal",
@@ -117,13 +125,7 @@ export const speakers = {
       image: "/speakers/himanshu.png",
       link: "https://www.linkedin.com/in/himanshusehgalpharmaci/",
     },
-    {
-      id: 2,
-      name: "Mr. Abhisek Hiteshi Arora",
-      role: "Project Leader, BCG",
-      image: "/speakers/abhisek.png",
-      link: "https://www.linkedin.com/in/link2abhiarora/",
-    },
+
     {
       id: 3,
       name: "Mr. Mihir Pujara",
