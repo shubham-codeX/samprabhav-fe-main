@@ -21,7 +21,7 @@ const scheduleData: Record<string, Event[]> = {
       title: "INAUGURAL EVENT",
       location: "Central Auditorium",
       side: "left",
-      speaker1:"Mr. Prateek Dubey",
+      speaker1:"Mr. Satish Khanna",
       position1:"Chief Guest",
       speaker2:"Dr. Vijay Charlu",
       position2:"Honorary Chairperson",
