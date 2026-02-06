@@ -62,13 +62,13 @@ const scheduleData: Record<string, Event[]> = {
 
   day2: [
     {
-      time: "9:30 AM - 10:30 AM",
+      time: "9:30 AM - 11:00 AM",
       title: "INCEPTION CEREMONY",
       location: "Central Auditorium",
       side: "left",
     },
     {
-      time: "10:30 AM - 11:00 AM",
+      time: "11:30 AM - 01:00 PM",
       title: "BUCKET 4: Reimagining Commercial Strategies for the Next Decade",
       location: "Central Auditorium",
       speaker1: "Ms. Megha Choubey",
@@ -78,7 +78,7 @@ const scheduleData: Record<string, Event[]> = {
       side: "right",
     },
     {
-      time: "01:00 PM - 02:00 PM",
+      time: "02:00 PM - 03:30 PM",
       title: "BUCKET 5: From Insight to Impact: Shaping the future of Healthcare Strategy",
       location: "Central Auditorium",
       speaker2: "Mr. Himanshu Sehgal",

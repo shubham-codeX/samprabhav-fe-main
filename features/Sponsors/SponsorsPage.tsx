@@ -36,6 +36,11 @@ export function SponsorsPage() {
       <section className="pb-20 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <SponsorCard
+            name="Agilisium Consulting"
+            logo="/sponsor_logos/abc.png"
+            type="PLATINUM"
+          />
+          <SponsorCard
             name="Advanced Pakiza Unani"
             logo="/sponsor_logos/pakiza.PNG"
             type="SILVER"
@@ -53,11 +58,6 @@ export function SponsorsPage() {
           <SponsorCard
             name="Guru Nanak Sweets"
             logo="/sponsor_logos/gns.PNG"
-            type="Food Partner"
-          />
-          <SponsorCard
-            name="Kitty The Master Baker"
-            logo="/sponsor_logos/kitty.PNG"
             type="Food Partner"
           />
           <SponsorCard
